@@ -321,3 +321,53 @@ Pour mériter d'être considéré comme tel, un bonus doit être :
 ex : -v pour afficher les piles pendant le traitement, -c pour afficher
 avec des couleurs etc...
 Notez-le de 0 (échec) à 5 (excellent)
+
+
+<----------------------------------------------------------------------------------------->
+
+conversation entre deux potes:
+
+Dantremb — Hier à 22:30
+  voila l'algo j'ai essayé de le mettre le plus clair possible mais c'est impossible avec push_swap 
+
+- Push-B tous le nombre entre 235 et 265
+  (la grandeur de la stack divisé en 2 + 15 et -15)
+  (si le nombres est plus petits que la moitié on rotate pour le placer a la fin de la stack-B)
+- Chaque fois qu'il n'y a plus de nombre à aller chercher dans le barème de nombres on
+  augmente de 15  supplémentaires. donc (220 a 280) et etc...jusqu'a ce que la stack A sois vide.
+  Donc on va avoir une stack B avec une trentaine de chunk de 15 nombres. Les chunks sont en ordres décroissant pour push du plus grand au plus petit dans la A.
+ - On Push-A les chiffres de 1 à 500. La fonction qui va chercher le prochains nombres dois toujours
+  aller chercher le dernier et l'avant dernier pour économisé des coups. Si l'avant
+  dernier était sur le chemin du dernier alors on peut le prendre et quand les 2 sont dans
+  la stack A on fait SWAP-A. On peut sauver jusqu'a 50 moves par nombres car si l'avant dernier est a [0] et le dernier a [15]
+  on dois rotate de 15 a droite et 14 a gauche ensuite. Si on va chercher 2 nombres a la fois alors il aurait eu
+  besoin de prendre le [0] avancer 14 fois et pushA + swapA donc 16 moves au lieu de 32. (modifié)
+
+  C'était la mon problème avec 500 par rapport a 100. mon 10 000 - 11 000 coup est divisé en 2 quand tu va chercher 2 nombres a la fois à la fin donc sa donne 5000-6000 coup
+
+Dracken(Nadia) — Hier à 22:36
+  je vais essayer ca demain
+
+Dantremb — Hier à 22:36
+  j'allais chercher 1 chiffre mais on doit aller chercher 2
+
+Dracken(Nadia) — Hier à 22:36
+  je comprends
+
+Dantremb — Hier à 22:37
+  je me le suis fait expliquer de la facons que je vien de l'écrire pour le comprendre. ahah!
+
+  J’ai une variable chunk = 15; donc je fait (argc/2 + chunk) && (argc/2 - chunk) et quand y’a pu de chiffre je fait chunk += 15; je suis rendu la jetait rendu à savoir comment arrêter ma boucle qui était infini  (modifié)
+
+Dracken(Nadia) — Hier à 22:59
+  Cool. C'est bien pensé
+
+Dantremb — Hier à 23:00
+  Le retour je sais pas encore
+
+  Pcq on dois aller chercher 500 et 499. Si 499 est trouver en premier on dois aller chercher 500 avant le 498
+
+  Donc on devrait avoir 2 variable last et before last. Quand les 2 sont trouvé on va fsire  last -= 2 et before last -= 2. Donc 2 autre variable pour savoir si les 2 on été trouvé.  Probablement une variable qui Check si les 2 sont trouvé avant de faire - 2
+
+Dracken(Nadia) — Hier à 23:09
+  Avec tes explications, je vais pouvoir avancer

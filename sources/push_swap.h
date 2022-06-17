@@ -23,28 +23,39 @@
 # define INT_MIN -2147483648
 # define INT_MAX 2147483647
 
+typedef struct p_ct{
+	int		i;
+	int		k;
+	int		x;
+	int		ii;
+	int		kk;
+	int		ct;
+}	t_ct;
+
+typedef struct p_nbr{
+	int		nbr_entry;
+	int		nbr_in_a;
+	int		nbr_in_b;
+	int		s_qrt;
+	int 	s_moy;
+	int		s_3_qrt;
+}	t_nbr;
+
 typedef struct p_list
 {
-	int	i;
-	int	k;
-	int	x;
-	int	ii;
-	int	kk;
-	int	ct;
-	int	len;
-	int	total_count;
-	int	nbr_entry;
-	int	nbr_in_a;
-	int nbr_in_b;
-	int	*stack_a;
-	int	*stack_b;
-	int	*save_moy;
-	int	*nbr;
-	int	temp;
-	int	s_qrt;
-	int s_moy;
-	int s_3_qrt;
-	int test;
+	int		total_count;
+	int		*save_moy;
+	int		*stack_a;
+	int		*stack_b;
+	int		*nbr;
+	int		temp;
+	int		len;
+	int 	test;
+	int		plus_15;
+	int		less_15;
+	int		center;
+	t_nbr	nbrs;
+	t_ct	ct;
 }		t_pslist;
 
 bool	save_nbr(int nb_arg, char **entry, t_pslist *all);

@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 00:28:13 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/01 19:30:49 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/17 13:48:43 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ void	ft_rr(t_pslist *all)
 void	ft_rra(t_pslist *all, int ct)
 // décale d’une position vers le bas tous les élements de la pile a
 {
-	if (all->nbr_in_a < 1)
+	if (all->nbrs.nbr_in_a < 1)
 		return ;
-	all->i = -1;
-	all->len = all->nbr_in_a - 1;
+	all->ct.i = -1;
+	all->len = all->nbrs.nbr_in_a - 1;
 	all->nbr = ft_calloc(sizeof(int), 2);
 	if (!all->nbr)
 	{
@@ -52,10 +52,10 @@ void	ft_rra(t_pslist *all, int ct)
 void	ft_rrb(t_pslist *all, int ct)
 // décale d’une position vers le bas tous les élements de la pile b
 {
-	if (all->nbr_in_b < 1)
+	if (all->nbrs.nbr_in_b < 1)
 		return ;
-	all->i = -1;
-	all->len = all->nbr_in_b - 1;
+	all->ct.i = -1;
+	all->len = all->nbrs.nbr_in_b - 1;
 	all->nbr = ft_calloc(sizeof(int), 2);
 	if (!all->nbr)
 	{

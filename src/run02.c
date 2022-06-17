@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 17:28:36 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/16 15:58:25 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/17 13:49:21 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void    ft_less_five(t_pslist *all)
 {
-	if (all->nbr_entry <= 3)
+	if (all->nbrs.nbr_entry <= 3)
 	{
 		while (!ft_check_order(all))
 		{
@@ -46,26 +46,26 @@ void    ft_less_five(t_pslist *all)
 
 void	ft_imp(t_pslist *all)
 {
-	while (all->stack_b[0] != all->save_moy[all->nbr_entry - 1])
+	while (all->stack_b[0] != all->save_moy[all->nbrs.nbr_entry - 1])
 		ft_rb(all, 1);
 	ft_pa(all);
 }
 
 void ft_lfive(t_pslist *all)
 {
-	all->i = -1;
-	all->k = all->nbr_in_a;
-	while (all->nbr_in_a > 0)
+	all->ct.i = -1;
+	all->ct.k = all->nbrs.nbr_in_a;
+	while (all->nbrs.nbr_in_a > 0)
 		ft_pb(all);
-	all->i = -1;
-	all->k = all->nbr_entry - 1;
-	while (all->k > 0)
+	all->ct.i = -1;
+	all->ct.k = all->nbrs.nbr_entry - 1;
+	while (all->ct.k > 0)
 	{
-		while (all->stack_b[0] < all->save_moy[all->k])
+		while (all->stack_b[0] < all->save_moy[all->ct.k])
 			ft_rb(all, 1);
-		if (all->stack_b[0] == all->save_moy[all->k])
+		if (all->stack_b[0] == all->save_moy[all->ct.k])
 			ft_pa(all);
-		all->k--;
+		all->ct.k--;
 	}
 	ft_pa(all);
 }
