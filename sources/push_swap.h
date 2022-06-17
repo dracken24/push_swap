@@ -51,15 +51,20 @@ typedef struct p_list
 	int		temp;
 	int		len;
 	int 	test;
-	int		plus_15;
-	int		less_15;
-	int		center;
+	int		plus_15_i;
+	int		less_15_i;
+	int		center_i;
+	int		plus_15_nbr;
+	int		less_15_nbr;
+	int		center_nbr;
+	int		diff;
 	t_nbr	nbrs;
 	t_ct	ct;
 }		t_pslist;
 
 bool	save_nbr(int nb_arg, char **entry, t_pslist *all);
 bool	ft_check_end(t_pslist *all);
+bool    ft_wside_a(t_pslist *all);
 bool    ft_wside(t_pslist *all);
 
 int		ft_check_all(int nb_arg, char **entry, t_pslist *all);
@@ -75,7 +80,11 @@ void	ft_second_class(t_pslist *all);
 void    ft_first_class(t_pslist *all);
 void	ft_print_stack(t_pslist *all);
 void	ft_less_five(t_pslist *all);
+void	ft_big_01(t_pslist *all);
+void	ft_big_02(t_pslist *all);
 void	ft_lfive(t_pslist *all);
+void	init_big(t_pslist *all);
+void	rec_b01(t_pslist *all);
 void    ft_tob1(t_pslist *all);
 void	ft_tob2(t_pslist *all);
 void	ft_imp(t_pslist *all);
