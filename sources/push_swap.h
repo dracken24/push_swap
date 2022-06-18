@@ -71,7 +71,7 @@ bool	save_nbr(int nb_arg, char **entry, t_pslist *all);
 bool	ft_check_end(t_pslist *all);
 bool    ft_wside_a(t_pslist *all);
 bool    ft_wside(t_pslist *all);
-bool    ft_wside2(t_pslist *all, int to_find, int nb);
+bool    ft_wside2(t_pslist *all, int to_find);
 
 int		ft_check_all(int nb_arg, char **entry, t_pslist *all);
 int		check_entry(int nb_arg, char **entry, t_pslist *all);
