@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 14:00:19 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/05/31 12:31:30 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/17 21:42:10 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 # include <ctype.h>
 # include <stdio.h>
 # include <stdbool.h>
+
+# define INT_MIN -2147483648
+# define INT_MAX 2147483647
 
 typedef struct s_list
 {
@@ -35,9 +38,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 
+long int		ft_atoi(const char *str);
+
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 int		ft_strncmp(char *s1, char *s2, size_t n);
-int		ft_atoi(const char *str);
 int		ft_lstsize(t_list *lst);
 int		ft_p_or_imp(int nbr);
 int		ft_isdigit(int c);

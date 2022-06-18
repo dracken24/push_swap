@@ -6,13 +6,13 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 10:40:00 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 13:11:54 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/17 21:41:40 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_atoi(const char *str)
+long int	ft_atoi(const char *str)
 {
 	int			i;
 	int			ctmin;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		if (numb < -2147483648 || numb > 2147483647)
+		if (numb < INT_MIN || numb > INT_MAX)
 			return (9);
 		numb = (str[i++] - '0') + (numb * 10);
 		if (!(str[i] >= '0' && str[i] <= '9'))

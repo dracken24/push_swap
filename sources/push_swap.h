@@ -30,6 +30,7 @@ typedef struct p_ct{
 	int		ii;
 	int		kk;
 	int		ct;
+	int		ct2;
 }	t_ct;
 
 typedef struct p_nbr{
@@ -45,6 +46,7 @@ typedef struct p_list
 {
 	int		total_count;
 	int		*save_moy;
+	int		*save_moy2;
 	int		*stack_a;
 	int		*stack_b;
 	int		*nbr;
@@ -58,6 +60,9 @@ typedef struct p_list
 	int		less_15_nbr;
 	int		center_nbr;
 	int		diff;
+	int		to_find1;
+	int		to_find2;
+	int		side;
 	t_nbr	nbrs;
 	t_ct	ct;
 }		t_pslist;
@@ -66,6 +71,7 @@ bool	save_nbr(int nb_arg, char **entry, t_pslist *all);
 bool	ft_check_end(t_pslist *all);
 bool    ft_wside_a(t_pslist *all);
 bool    ft_wside(t_pslist *all);
+bool    ft_wside2(t_pslist *all, int to_find, int nb);
 
 int		ft_check_all(int nb_arg, char **entry, t_pslist *all);
 int		check_entry(int nb_arg, char **entry, t_pslist *all);

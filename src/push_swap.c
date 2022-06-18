@@ -56,6 +56,7 @@ int	ft_run_prog(t_pslist *all)
 	else
 	{
 		ft_big_01(all);
+		ft_big_02(all);
 	}
 	return (false);
 }

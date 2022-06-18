@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 14:56:20 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 13:46:47 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/17 21:46:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ bool	save_nbr(int nb_arg, char **entry, t_pslist *all)
 		if (ft_atoi(entry[i]) > INT_MAX || ft_atoi(entry[i]) < INT_MIN)
 			exit(ft_printf("Over int limit"));
 		all->stack_a[k] = ft_atoi(entry[i]);
+		ft_printf("%d ", all->stack_a[k]);
 		k++;
 	}
 	all->nbrs.nbr_entry = (i - 1);
