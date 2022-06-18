@@ -48,18 +48,9 @@ int	ft_run_prog(t_pslist *all)
 	init_big(all);
 	if (all->nbrs.nbr_entry > 5)
 	{
-		// ft_tob1(all);
-		// ft_first_class(all);
-		// ft_tob2(all);
-		// ft_second_class(all);
 		ft_big_01(all);
 		ft_big_02(all);
 	}
-	// else
-	// {
-	// 	ft_big_01(all);
-	// 	ft_big_02(all);
-	// }
 	return (false);
 }
 
