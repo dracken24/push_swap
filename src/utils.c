@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 01:16:49 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 23:01:24 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 16:36:43 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ bool    ft_wside_a(t_pslist *all)
     return (true);
 }
 
-void ft_print_stack(t_pslist *all)
+void    ft_print_stack(t_pslist *all)
 {
     int i;
 
@@ -92,4 +92,31 @@ void ft_print_stack(t_pslist *all)
         printf("[\033[0;36m%03d\033[0;37m]", all->stack_b[i]);
     printf("\n");
     ft_printf("COUNT: %d\n", all->total_count);
+}
+
+bool    ft_wside2(t_pslist *all, int to_find)
+{
+	int	i;
+	int	k;
+
+	all->ct.i = all->nbrs.nbr_in_b - 1;
+	i = -1;
+	k = -1;
+	while (to_find != all->stack_b[--all->ct.i])
+	{
+		if (all->ct.i < 0)
+			break ;
+		++i;
+	}
+	all->ct.k = -1;
+	while (to_find != all->stack_b[++all->ct.k])
+	{
+		if (all->ct.k > all->nbrs.nbr_in_b)
+			break ;
+		++k;
+	}
+	if (i > k)
+		return (true);
+	else
+		return (false);	
 }
