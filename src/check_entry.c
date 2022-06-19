@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/18 18:51:31 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 14:36:29 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,19 +74,25 @@ int	check_doub(int nb_arg, char **entry, t_pslist *all)
 int	ft_check_order(t_pslist *all)
 {
 	all->ct.i = 0;
+	all->ct.k = 0;
 	if (all->nbrs.nbr_entry == 1)
 		return(true);
+	if (all->nbrs.nbr_entry == 5)
+		all->ct.k = 2;
+	if (all->nbrs.nbr_entry == 4)
+		all->ct.k = 1;
 	else if (all->nbrs.nbr_entry == 2)
 	{
 		if (all->stack_a[0] > all->stack_a[1])
 			ft_ra(all, 1);
 		return (true);
 	}
-	while (all->ct.i < all->nbrs.nbr_entry)
+	while (all->ct.i < all->nbrs.nbr_in_a)
 	{
-		if (all->stack_a[all->ct.i] != all->save_moy[all->ct.i])
+		if (all->stack_a[all->ct.i] != all->save_moy[all->ct.k])
 			return(false);
 		all->ct.i++;
+		all->ct.k++;
 	}
 	return (true);
 }

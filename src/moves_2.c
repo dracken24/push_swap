@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 00:28:13 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/18 21:39:13 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 14:45:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void	ft_rr(t_pslist *all)
 	ft_rb(all, 0);
 	all->total_count += 1;
 	ft_printf("rr\n");
+	// ft_print_stack(all);
 }
 
 void	ft_rra(t_pslist *all, int ct)
@@ -50,6 +51,7 @@ void	ft_rra(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("rra\n");
+		// ft_print_stack(all);
 	}
 }
 
@@ -82,6 +84,7 @@ void	ft_rrb(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("rrb\n");
+		// ft_print_stack(all);
 	}
 }
 

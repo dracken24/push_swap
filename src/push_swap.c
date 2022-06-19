@@ -49,17 +49,22 @@ int	ft_run_prog(t_pslist *all)
 		return (false);
 	if (all->nbrs.nbr_entry <= 5)
 		ft_less_five(all);
-	init_big(all);
-	if (all->nbrs.nbr_entry > 5)
+	if (all->nbrs.nbr_entry <= 100 && all->nbrs.nbr_entry > 5)
 	{
+		init_med(all);
+		ft_med_01(all);
+		ft_med_02(all);
+	}
+	if (all->nbrs.nbr_entry > 100)
+	{
+		init_big(all);
 		ft_big_01(all);
-		// ft_print_stack(all);
 		ft_big_02(all);
 	}
 	return (false);
 }
 
-void	init_big(t_pslist *all)
+void	init_med(t_pslist *all)
 {
 	all->center_i = all->nbrs.nbr_entry / 2;
 	all->plus_15_i = all->center_i + 15;
@@ -67,6 +72,17 @@ void	init_big(t_pslist *all)
 	all->center_nbr = all->save_moy[all->nbrs.nbr_entry / 2];
 	all->plus_15_nbr = all->save_moy[all->center_i + 15];
 	all->less_15_nbr = all->save_moy[all->center_i - 15];
+	all->diff = all->plus_15_i - all->less_15_i;
+}
+
+void	init_big(t_pslist *all)
+{
+	all->center_i = all->nbrs.nbr_entry / 2;
+	all->plus_15_i = all->center_i + 30;
+	all->less_15_i = all->center_i - 30;
+	all->center_nbr = all->save_moy[all->nbrs.nbr_entry / 2];
+	all->plus_15_nbr = all->save_moy[all->center_i + 30];
+	all->less_15_nbr = all->save_moy[all->center_i - 30];
 	all->diff = all->plus_15_i - all->less_15_i;
 }
 

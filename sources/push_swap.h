@@ -32,6 +32,8 @@ typedef struct p_ct
 	int kk;
 	int ct;
 	int ct2;
+	int	find1;
+	int	find2;
 } t_ct;
 
 typedef struct p_nbr
@@ -48,7 +50,7 @@ typedef struct p_list
 {
 	int total_count;
 	int *save_moy;
-	int *save_moy2;
+	// int *save_moy2;
 	int *stack_a;
 	int *stack_b;
 	int *nbr;
@@ -107,5 +109,15 @@ bool ft_pb2(t_pslist *all);
 void ft_rr(t_pslist *all);
 bool ft_pa(t_pslist *all);
 bool ft_pb(t_pslist *all);
+
+void ft_med_01(t_pslist *all);
+void more_31_med(t_pslist *all);
+void rec_m01(t_pslist *all);
+void ft_med_02(t_pslist *all);
+void m02_part1(t_pslist *all);
+void m02_part2(t_pslist *all);
+void init_med(t_pslist *all);
+void	choose_to_find(t_pslist *all, int find1, int find2);
+void	less_tree(t_pslist *all);
 
 #endif

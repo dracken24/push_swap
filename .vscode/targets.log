@@ -10,9 +10,8 @@ make -C ./libft
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sat Jun 18 18:28:40 2022
+# Make data base, printed on Sun Jun 19 11:30:06 2022
 
 # Variables
 
@@ -35,7 +34,7 @@ MEM_A = ./mem_alloc/
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d2251c74-14a5-41b0-a80c-4db2ba9fcd16.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c0f957b8-6637-49e0-8972-c283cca64cb3.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -54,6 +53,7 @@ QT_ACCESSIBILITY = 1
 @D = $(patsubst %/,%,$(dir $@))
 # environment
 SNAP_INSTANCE_NAME = code
+ 
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
@@ -70,7 +70,6 @@ STR = ./str/
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
- 
 # environment
 OLDPWD = /home/dracken24
 # makefile (from 'Makefile', line 27)
@@ -134,7 +133,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4441
+VSCODE_PID = 5186
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -142,7 +141,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2845,unix/Dracken24:/tmp/.ICE-unix/2845
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2662,unix/Dracken24:/tmp/.ICE-unix/2662
 # automatic
 *F = $(notdir $*)
 # environment
@@ -177,7 +176,6 @@ MAKE = $(MAKE_COMMAND)
 SNAP_COOKIE = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
 PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/dracken24/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
- 
 # default
 MAKEFILES := 
 # environment
@@ -189,7 +187,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = 6ed3967d7b294a43b45ea176aacfbac2
+INVOCATION_ID = 17b441446a0f414eabb5ee96f494840f
 # environment
 SNAP_REVISION = 99
 # environment
@@ -227,7 +225,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2872
+SYSTEMD_EXEC_PID = 2689
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -249,11 +247,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2267
+MANAGERPID = 2086
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4376
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5136
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -271,7 +269,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:33696
+JOURNAL_STREAM = 8:26404
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -302,7 +300,6 @@ SNAP_VERSION = 30d9c6cd
 SUFFIXES := 
 # environment
 VSCODE_CLI = 1
- 
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -343,13 +340,13 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Not a target:
 lst/ft_lstiter.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.541762395
+#  Last modified 2022-06-18 23:31:41.240694687
 #  File has been updated.
 #  Successfully updated.
 
 libft.a: math/ft_ultimate_range.o math/ft_putnbr.o math/ft_range.o math/ft_swap.o math/ft_rev_int_tab.o math/ft_nbrlen.o math/ft_putnbr_fd.o math/ft_p_or_imp.o mem_alloc/ft_bzero.o mem_alloc/ft_calloc.o lst/ft_lstmap.o lst/ft_lstiter.o lst/ft_lstclear.o lst/ft_lstdelone.o lst/ft_lstadd_back.o lst/ft_lstlast.o lst/ft_lstsize.o lst/ft_lstadd_front.o lst/ft_lstnew.o str/ft_strlen.o str/ft_strlcpy.o str/ft_strlcat.o str/ft_strrchr.o str/ft_strncmp.o str/ft_strnstr.o str/ft_strtrim.o str/ft_strmapi.o str/ft_striteri.o str/ft_strdup.o str/ft_substr.o str/ft_strjoin.o str/ft_strcat.o str/ft_putchar_fd.o str/ft_putstr_fd.o str/ft_toupper.o str/ft_tolower.o str/ft_strmapi.o str/ft_striteri.o str/ft_putendl_fd.o str/ft_strchr.o str/ft_split.o mem_move/ft_memset.o mem_move/ft_memmove.o mem_move/ft_memcmp.o mem_move/ft_memcpy.o is/ft_isalpha.o is/ft_isdigit.o is/ft_isalnum.o is/ft_isascii.o is/ft_isprint.o atoitoa/ft_atoi.o atoitoa/ft_itoa.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-18 18:20:51.105756626
+#  Last modified 2022-06-18 23:31:41.808689116
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 59):
@@ -360,82 +357,81 @@ libft.a: math/ft_ultimate_range.o math/ft_putnbr.o math/ft_range.o math/ft_swap.
 # Not a target:
 str/ft_putchar_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.849759245
+#  Last modified 2022-06-18 23:31:41.552691627
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstadd_front.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.629761494
+#  Last modified 2022-06-18 23:31:41.324693863
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
- 
 str/ft_strrchr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.701760758
+ 
+#  Last modified 2022-06-18 23:31:41.400693117
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstadd_back.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.585761944
+#  Last modified 2022-06-18 23:31:41.280694295
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstdelone.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.573762067
+#  Last modified 2022-06-18 23:31:41.268694412
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_putnbr_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.46976313
+#  Last modified 2022-06-18 23:31:41.164695433
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_rev_int_tab.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.437763458
+#  Last modified 2022-06-18 23:31:41.132695746
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strtrim.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.745760308
+#  Last modified 2022-06-18 23:31:41.444692686
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_putnbr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.393763907
+#  Last modified 2022-06-18 23:31:41.088696178
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 mem_alloc/ft_calloc.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.513762681
+#  Last modified 2022-06-18 23:31:41.208695001
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 mem_alloc/ft_bzero.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.497762844
+#  Last modified 2022-06-18 23:31:41.192695157
 #  File has been updated.
 #  Successfully updated.
 
- 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
@@ -446,42 +442,42 @@ Makefile:
 # Not a target:
 str/ft_substr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.805759694
+#  Last modified 2022-06-18 23:31:41.504692097
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strnstr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.73376043
+#  Last modified 2022-06-18 23:31:41.428692843
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 mem_move/ft_memcmp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.981757894
+#  Last modified 2022-06-18 23:31:41.684690332
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstmap.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.529762516
+#  Last modified 2022-06-18 23:31:41.224694844
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strjoin.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.821759531
+#  Last modified 2022-06-18 23:31:41.520691941
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 atoitoa/ft_itoa.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.101756667
+#  Last modified 2022-06-18 23:31:41.804689155
 #  File has been updated.
 #  Successfully updated.
 
@@ -496,29 +492,28 @@ clean:
 # Not a target:
 str/ft_split.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.937758345
+#  Last modified 2022-06-18 23:31:41.640690764
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_putendl_fd.o:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-06-18 18:20:50.905758671
+#  Last modified 2022-06-18 23:31:41.612691038
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strlcat.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.685760921
+#  Last modified 2022-06-18 23:31:41.384693275
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strmapi.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.761760145
+#  Last modified 2022-06-18 23:31:41.460692529
 #  File has been updated.
 #  Successfully updated.
 
@@ -531,35 +526,35 @@ re: fclean all
 # Not a target:
 mem_move/ft_memcpy.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.997757731
+#  Last modified 2022-06-18 23:31:41.700690175
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strdup.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.789759859
+#  Last modified 2022-06-18 23:31:41.492692215
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 is/ft_isprint.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.069756994
+#  Last modified 2022-06-18 23:31:41.772689469
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 is/ft_isalnum.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.04175728
+#  Last modified 2022-06-18 23:31:41.744689744
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 is/ft_isalpha.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.009757608
+#  Last modified 2022-06-18 23:31:41.716690018
 #  File has been updated.
 #  Successfully updated.
 
@@ -567,14 +562,14 @@ is/ft_isalpha.o:
 is/ft_isdigit.o:
 #  Implicit rule search has been done.
  
-#  Last modified 2022-06-18 18:20:51.025757445
+#  Last modified 2022-06-18 23:31:41.7286899
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 mem_move/ft_memset.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.95375818
+#  Last modified 2022-06-18 23:31:41.656690607
 #  File has been updated.
 #  Successfully updated.
 
@@ -587,7 +582,7 @@ mem_move/ft_memset.o:
 # Not a target:
 atoitoa/ft_atoi.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.085756831
+#  Last modified 2022-06-18 23:31:41.788689312
 #  File has been updated.
 #  Successfully updated.
 
@@ -609,28 +604,28 @@ fclean: clean
 # Not a target:
 str/ft_strcat.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.837759368
+#  Last modified 2022-06-18 23:31:41.536691784
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_swap.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.42576358
+#  Last modified 2022-06-18 23:31:41.116695903
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strchr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.921758508
+#  Last modified 2022-06-18 23:31:41.62469092
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_ultimate_range.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.377764072
+#  Last modified 2022-06-18 23:31:41.072696335
 #  File has been updated.
 #  Successfully updated.
 
@@ -642,61 +637,60 @@ gitp:
 	@(git add .)
 	@(git commit -m "nadesjar42")
 	@(git push)
- 
 
 # Not a target:
 str/ft_tolower.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.893758794
+#  Last modified 2022-06-18 23:31:41.596691195
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 mem_move/ft_memmove.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.969758017
+#  Last modified 2022-06-18 23:31:41.67269045
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstlast.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.601761781
+#  Last modified 2022-06-18 23:31:41.296694137
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strncmp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.717760594
+#  Last modified 2022-06-18 23:31:41.412693
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strlcpy.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.673761044
+#  Last modified 2022-06-18 23:31:41.368693431
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstnew.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.641761371
+#  Last modified 2022-06-18 23:31:41.340693706
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_striteri.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.777759981
+#  Last modified 2022-06-18 23:31:41.476692372
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 lst/ft_lstclear.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.55776223
+#  Last modified 2022-06-18 23:31:41.252694569
 #  File has been updated.
 #  Successfully updated.
 
@@ -704,49 +698,49 @@ lst/ft_lstclear.o:
 lst/ft_lstsize.o:
 #  Implicit rule search has been done.
  
-#  Last modified 2022-06-18 18:20:50.613761658
+#  Last modified 2022-06-18 23:31:41.30869402
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_toupper.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.877758958
+#  Last modified 2022-06-18 23:31:41.580691352
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_strlen.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.657761208
+#  Last modified 2022-06-18 23:31:41.352693588
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_p_or_imp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.485762967
+#  Last modified 2022-06-18 23:31:41.180695275
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_range.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.409763744
+#  Last modified 2022-06-18 23:31:41.104696021
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 math/ft_nbrlen.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.453763295
+#  Last modified 2022-06-18 23:31:41.148695589
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 str/ft_putstr_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:50.86575908
+#  Last modified 2022-06-18 23:31:41.56869147
 #  File has been updated.
 #  Successfully updated.
 
@@ -758,7 +752,7 @@ str/ft_putstr_fd.o:
 # Not a target:
 is/ft_isascii.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.057757117
+#  Last modified 2022-06-18 23:31:41.760689586
 #  File has been updated.
 #  Successfully updated.
 
@@ -776,8 +770,9 @@ is/ft_isascii.o:
 # strcache performance: lookups = 95 / hit rate = 22%
 # hash-table stats:
 # Load=74/8192=1%, Rehash=0, Collisions=1/95=1%
-# Finished Make data base on Sat Jun 18 18:28:40 2022
+# Finished Make data base on Sun Jun 19 11:30:06 2022
 
+ 
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -785,7 +780,7 @@ is/ft_isascii.o:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 18 18:28:40 2022
+# Make data base, printed on Sun Jun 19 11:30:06 2022
 
 # Variables
 
@@ -808,7 +803,7 @@ HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d2251c74-14a5-41b0-a80c-4db2ba9fcd16.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c0f957b8-6637-49e0-8972-c283cca64cb3.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -902,7 +897,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4441
+VSCODE_PID = 5186
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -910,8 +905,9 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2845,unix/Dracken24:/tmp/.ICE-unix/2845
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2662,unix/Dracken24:/tmp/.ICE-unix/2662
 # automatic
+ 
 *F = $(notdir $*)
 # environment
 MANPATH = /home/linuxbrew/.linuxbrew/share/man:
@@ -956,7 +952,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = 6ed3967d7b294a43b45ea176aacfbac2
+INVOCATION_ID = 17b441446a0f414eabb5ee96f494840f
 # environment
 SNAP_REVISION = 99
 # environment
@@ -994,7 +990,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2872
+SYSTEMD_EXEC_PID = 2689
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -1014,11 +1010,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2267
+MANAGERPID = 2086
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4376
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5136
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -1036,7 +1032,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:33696
+JOURNAL_STREAM = 8:26404
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -1105,15 +1101,14 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Not a target:
 ft_printf.o:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-06-18 18:20:51.141756258
+#  Last modified 2022-06-18 23:31:41.844688762
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 ft_hexa.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.125756421
+#  Last modified 2022-06-18 23:31:41.82868892
 #  File has been updated.
 #  Successfully updated.
 
@@ -1127,12 +1122,13 @@ Makefile:
 # Not a target:
 ft_put.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:51.157756094
+#  Last modified 2022-06-18 23:31:41.860688606
 #  File has been updated.
 #  Successfully updated.
 
 clean:
 #  Phony target (prerequisite of .PHONY).
+ 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -1159,7 +1155,7 @@ push:
 
 libftprintf.a: ft_hexa.o ft_printf.o ft_put.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-18 18:20:51.161756054
+#  Last modified 2022-06-18 23:31:41.864688566
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 38):
@@ -1244,9 +1240,8 @@ make_lib:
 
 # strcache performance: lookups = 51 / hit rate = 52%
 # hash-table stats:
- 
 # Load=24/8192=0%, Rehash=0, Collisions=0/51=0%
-# Finished Make data base on Sat Jun 18 18:28:40 2022
+# Finished Make data base on Sun Jun 19 11:30:06 2022
 
 # make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf'
  
@@ -1257,7 +1252,7 @@ make_lib:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 18 18:28:40 2022
+# Make data base, printed on Sun Jun 19 11:30:06 2022
 
 # Variables
 
@@ -1280,7 +1275,7 @@ HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d2251c74-14a5-41b0-a80c-4db2ba9fcd16.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c0f957b8-6637-49e0-8972-c283cca64cb3.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -1310,13 +1305,13 @@ PWD = /home/dracken24/Desktop/prog/42_en_cours/push_swap
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
- 
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/dracken24
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
+ 
 VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
@@ -1371,7 +1366,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4441
+VSCODE_PID = 5186
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -1379,7 +1374,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2845,unix/Dracken24:/tmp/.ICE-unix/2845
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2662,unix/Dracken24:/tmp/.ICE-unix/2662
 # automatic
 *F = $(notdir $*)
 # environment
@@ -1429,7 +1424,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = 6ed3967d7b294a43b45ea176aacfbac2
+INVOCATION_ID = 17b441446a0f414eabb5ee96f494840f
 # environment
 SNAP_REVISION = 99
 # environment
@@ -1441,7 +1436,7 @@ VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = dracken24
 # makefile (from 'Makefile', line 25)
-FILES = $(PATH_SRC)push_swap.c $(PATH_SRC)check_entry.c $(PATH_SRC)using_malloc.c $(PATH_SRC)moves_1.c $(PATH_SRC)moves_2.c $(PATH_SRC)utils.c $(PATH_SRC)big_run.c $(PATH_SRC)run02.c 
+FILES = $(PATH_SRC)push_swap.c $(PATH_SRC)check_entry.c $(PATH_SRC)using_malloc.c $(PATH_SRC)moves_1.c $(PATH_SRC)moves_2.c $(PATH_SRC)utils.c $(PATH_SRC)big_run.c $(PATH_SRC)run02.c $(PATH_SRC)med_run_1.c 
 # automatic
 ?F = $(notdir $?)
 # makefile (from 'Makefile', line 38)
@@ -1464,7 +1459,6 @@ ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = dracken24
- 
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
@@ -1472,7 +1466,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2872
+SYSTEMD_EXEC_PID = 2689
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -1492,11 +1486,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2267
+MANAGERPID = 2086
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4376
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5136
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -1506,6 +1500,7 @@ _ = /snap/code/99/usr/share/code/code
 # makefile (from 'Makefile', line 20)
 RESET = "\033[0m"
 # environment
+ 
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 32)
 CFLAGS = -Wall -Werror -Wextra
@@ -1514,7 +1509,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:33696
+JOURNAL_STREAM = 8:26404
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -1566,7 +1561,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=151/1024=15%, Rehash=0, Collisions=13/203=6%
+# Load=151/1024=15%, Rehash=0, Collisions=13/204=6%
 
 # Pattern-specific Variable Values
 
@@ -1574,16 +1569,15 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# src (device 66308, inode 2386673): 11 files, no impossibilities so far.
-# . (device 66308, inode 2363792): 16 files, no impossibilities.
+# src (device 66308, inode 2386673): 12 files, no impossibilities so far.
+# . (device 66308, inode 2363792): 18 files, no impossibilities.
 
-# 27 files, no impossibilities in 2 directories.
+# 30 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 objs/%.o: src/%.c
 #  recipe to execute (from 'Makefile', line 55):
- 
 	@mkdir -p $(PATH_OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -1593,42 +1587,42 @@ objs/%.o: src/%.c
 # Not a target:
 src/big_run.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:36.433906678
+#  Last modified 2022-06-18 22:00:29.48032496
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 src/moves_2.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 21:35:15.086506899
+#  Last modified 2022-06-18 23:15:04.531516809
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 src/moves_1.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 21:35:15.086506899
+#  Last modified 2022-06-18 23:14:58.559583473
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:20:49.141776713
+#  Last modified 2022-06-18 22:23:31.753388747
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 src/push_swap.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:16:24.38048441
+#  Last modified 2022-06-18 23:34:03.799278978
 #  File has been updated.
 #  Successfully updated.
 
 objs/check_entry.o: src/check_entry.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'check_entry'
-#  Last modified 2022-06-18 18:20:51.201755644
+#  Last modified 2022-06-18 23:31:41.904688174
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1640,6 +1634,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 67):
 	@rm -f $(OBJ) $(REMOVE)
 	@rm -fr ./objs
@@ -1648,7 +1643,7 @@ clean:
 objs/run02.o: src/run02.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'run02'
-#  Last modified 2022-06-18 18:20:51.313754499
+#  Last modified 2022-06-18 23:31:42.024686997
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1658,8 +1653,7 @@ objs/run02.o: src/run02.c
 objs/push_swap.o: src/push_swap.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'push_swap'
- 
-#  Last modified 2022-06-18 18:20:51.181755849
+#  Last modified 2022-06-18 23:34:07.963237149
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1669,7 +1663,7 @@ objs/push_swap.o: src/push_swap.c
 # Not a target:
 src/check_entry.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 18:07:59.189651037
+#  Last modified 2022-06-18 18:51:31.962930015
 #  File has been updated.
 #  Successfully updated.
 
@@ -1689,6 +1683,16 @@ push:
 	@(git commit -m "nadesjar42")
 	@(git push)
 
+objs/med_run_1.o: src/med_run_1.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'med_run_1'
+#  Last modified 2022-06-18 23:31:42.044686801
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 55):
+	@mkdir -p $(PATH_OBJS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
@@ -1698,7 +1702,7 @@ push:
 # Not a target:
 src/run02.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 21:35:15.086506899
+#  Last modified 2022-06-18 23:30:07.605604282
 #  File has been updated.
 #  Successfully updated.
 
@@ -1724,7 +1728,7 @@ fclean: clean
 objs/big_run.o: src/big_run.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'big_run'
-#  Last modified 2022-06-18 18:20:51.297754663
+#  Last modified 2022-06-18 23:31:42.004687194
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1734,15 +1738,21 @@ objs/big_run.o: src/big_run.c
 # Not a target:
 src/using_malloc.c:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-06-18 17:59:11.467048165
+#  Last modified 2022-06-18 23:21:07.743486814
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/med_run_1.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-18 22:20:45.09108411
 #  File has been updated.
 #  Successfully updated.
 
 objs/moves_2.o: src/moves_2.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'moves_2'
-#  Last modified 2022-06-18 18:20:51.261755032
+#  Last modified 2022-06-18 23:31:41.964687586
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1750,9 +1760,10 @@ objs/moves_2.o: src/moves_2.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Not a target:
+ 
 src/utils.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 17:10:04.05315498
+#  Last modified 2022-06-18 21:45:25.739588901
 #  File has been updated.
 #  Successfully updated.
 
@@ -1784,9 +1795,9 @@ make_lib:
 #  recipe to execute (from 'Makefile', line 59):
 	$(MAKE) -C ./ft_printf
 
-push_swap.a: objs/push_swap.o objs/check_entry.o objs/using_malloc.o objs/moves_1.o objs/moves_2.o objs/utils.o objs/big_run.o objs/run02.o
+push_swap.a: objs/push_swap.o objs/check_entry.o objs/using_malloc.o objs/moves_1.o objs/moves_2.o objs/utils.o objs/big_run.o objs/run02.o objs/med_run_1.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-18 18:20:51.317754458
+#  Last modified 2022-06-18 23:34:07.967237108
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 49):
@@ -1805,12 +1816,11 @@ push_swap.a: objs/push_swap.o objs/check_entry.o objs/using_malloc.o objs/moves_
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 objs/using_malloc.o: src/using_malloc.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'using_malloc'
-#  Last modified 2022-06-18 18:20:51.22175544
+#  Last modified 2022-06-18 23:31:41.928687939
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1820,7 +1830,7 @@ objs/using_malloc.o: src/using_malloc.c
 objs/moves_1.o: src/moves_1.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'moves_1'
-#  Last modified 2022-06-18 18:20:51.241755235
+#  Last modified 2022-06-18 23:31:41.944687782
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1830,7 +1840,7 @@ objs/moves_1.o: src/moves_1.c
 objs/utils.o: src/utils.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'utils'
-#  Last modified 2022-06-18 18:20:51.277754867
+#  Last modified 2022-06-18 23:31:41.98468739
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 55):
@@ -1838,19 +1848,19 @@ objs/utils.o: src/utils.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # files hash-table stats:
-# Load=27/1024=3%, Rehash=0, Collisions=0/84=0%
+# Load=29/1024=3%, Rehash=0, Collisions=0/90=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 61 / storage = 645 B / avg = 10 B
-# current buf: size = 8162 B / used = 645 B / count = 61 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 67 / storage = 724 B / avg = 10 B
+# current buf: size = 8162 B / used = 724 B / count = 67 / avg = 10 B
 
-# strcache performance: lookups = 99 / hit rate = 38%
+# strcache performance: lookups = 106 / hit rate = 36%
 # hash-table stats:
-# Load=61/8192=1%, Rehash=0, Collisions=0/99=0%
-# Finished Make data base on Sat Jun 18 18:28:40 2022
+# Load=67/8192=1%, Rehash=0, Collisions=0/106=0%
+# Finished Make data base on Sun Jun 19 11:30:06 2022
 
  
