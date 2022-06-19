@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 17:57:04 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 13:22:35 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 15:07:20 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_big_01(t_pslist *all)
 {
-	if (all->nbrs.nbr_in_a < 61)
+	if (all->nbrs.nbr_in_a < 65)
 	{
 		while (all->nbrs.nbr_in_a)
 		{
@@ -32,7 +32,7 @@ void	ft_big_01(t_pslist *all)
 
 void	more_31(t_pslist *all)
 {
-	while (all->nbrs.nbr_in_a >= 61)
+	while (all->nbrs.nbr_in_a >= 65)
 	{
 		while (!(all->stack_a[0] >= all->less_15_nbr) || !(all->stack_a[0] <= all->plus_15_nbr))
 			ft_ra(all, 1);
@@ -43,7 +43,7 @@ void	more_31(t_pslist *all)
 			if (all->stack_b[0] < all->center_nbr && all->nbrs.nbr_in_b > 1)
 				ft_rb(all, 1);
 		}
-		if (all->nbrs.nbr_in_a > 61)
+		if (all->nbrs.nbr_in_a > 65)
 			if (all->nbrs.nbr_entry - all->nbrs.nbr_in_a > all->diff)
 				break;
 	}
@@ -51,8 +51,8 @@ void	more_31(t_pslist *all)
 
 void	rec_b01(t_pslist *all)
 {
-	all->plus_15_i += 30;
-	all->less_15_i -= 30;
+	all->plus_15_i += 32;
+	all->less_15_i -= 32;
 	all->plus_15_nbr = all->save_moy[all->plus_15_i];
 	all->less_15_nbr = all->save_moy[all->less_15_i];
 	all->diff = all->plus_15_i - all->less_15_i;
@@ -69,12 +69,10 @@ void	ft_big_02(t_pslist *all)
 {
 	all->to_find1 = all->save_moy[all->nbrs.nbr_in_b - 1];
 	all->to_find2 = all->save_moy[all->nbrs.nbr_in_b - 2];
-	// choose_to_find(all, all->to_find1, all->to_find2);
 	if (all->stack_b)
 	{
 		if (all->stack_b)
 		{
-			// all->ct.x = 0;
 			b02_part1(all);
 			b02_part2(all);
 		}
@@ -105,7 +103,6 @@ void	b02_part1(t_pslist *all)
 		else
 			ft_rrb(all, 1);
 	}
-	// b02_part2(all);
 }
 
 void	b02_part2(t_pslist *all)
@@ -127,5 +124,4 @@ void	b02_part2(t_pslist *all)
 		else
 			ft_rrb(all, 1);
 	}
-	// b02_part1(all);
 }

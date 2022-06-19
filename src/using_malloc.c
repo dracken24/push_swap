@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 14:56:20 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 14:45:37 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 14:55:57 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,6 @@ bool	ft_pa2(t_pslist *all)
 	all->nbrs.nbr_in_a += 1;
 	all->nbrs.nbr_in_b -= 1;
 	ft_printf("pa\n");
-	// ft_print_stack(all);
 	free(all->nbr);
 	return (true);
 }
@@ -150,7 +149,6 @@ bool	ft_pb2(t_pslist *all)
 	all->nbrs.nbr_in_b += 1;
 	all->nbrs.nbr_in_a -= 1;
 	ft_printf("pb\n");
-	// ft_print_stack(all);
 	free(all->nbr);
 	return (true);
 }

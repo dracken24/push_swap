@@ -78,30 +78,29 @@ void	init_med(t_pslist *all)
 void	init_big(t_pslist *all)
 {
 	all->center_i = all->nbrs.nbr_entry / 2;
-	all->plus_15_i = all->center_i + 30;
-	all->less_15_i = all->center_i - 30;
+	all->plus_15_i = all->center_i + 32;
+	all->less_15_i = all->center_i - 32;
 	all->center_nbr = all->save_moy[all->nbrs.nbr_entry / 2];
-	all->plus_15_nbr = all->save_moy[all->center_i + 30];
-	all->less_15_nbr = all->save_moy[all->center_i - 30];
+	all->plus_15_nbr = all->save_moy[all->center_i + 32];
+	all->less_15_nbr = all->save_moy[all->center_i - 32];
 	all->diff = all->plus_15_i - all->less_15_i;
 }
 
 void	ft_init_variables(t_pslist *all)
 {
 	all->ct.ct = -1;
-	all->ct.ii =0;
-	all->ct.kk =0;
+	all->ct.ii = 0;
+	all->ct.kk = 0;
 	all->ct.i = 0;
 	all->ct.k = 0;
 	all->ct.x = 0;
 	all->nbrs.nbr_entry = 0;
-	all->nbrs.nbr_in_b =0;
+	all->nbrs.nbr_in_b = 0;
 	all->nbrs.s_3_qrt =	0;
-	all->nbrs.s_qrt =0;
-	all->nbrs.s_moy =0;
+	all->nbrs.s_qrt = 0;
+	all->nbrs.s_moy = 0;
 	all->total_count = 0;
 	all->temp =	0;
-	all->test =	0;
 	all->nbr = 0;
 	all->len = 0;
 }

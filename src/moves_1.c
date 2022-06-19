@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 16:11:38 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 14:45:34 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 14:56:24 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_sa(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("sa\n");
-		// ft_print_stack(all);
 	}
 }
 
@@ -41,7 +40,6 @@ void	ft_sb(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("sb\n");
-		// ft_print_stack(all);
 	}
 }
 
@@ -52,7 +50,6 @@ void	ft_ss(t_pslist *all, int ct)
 	ft_sb(all, ct);
 	all->total_count += 1;
 	ft_printf("ss\n");
-	// ft_print_stack(all);
 }
 
 void	ft_ra(t_pslist *all, int ct)
@@ -73,7 +70,6 @@ void	ft_ra(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("ra\n");
-		// ft_print_stack(all);
 	}
 }
 
@@ -95,6 +91,5 @@ void	ft_rb(t_pslist *all, int ct)
 	{
 		all->total_count += 1;
 		ft_printf("rb\n");
-		// ft_print_stack(all);
 	}
 }

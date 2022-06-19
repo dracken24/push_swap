@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 01:16:49 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 13:07:24 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 15:02:56 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,39 +78,4 @@ bool    ft_wside2(t_pslist *all, int to_find)
 		return (true);
 	else
 		return (false);	
-}
-
-void	choose_to_find(t_pslist *all, int find1, int find2)
-{
-	int	i;
-	int	k;
-	// ft_printf("HELP\n");
-	i = 0;
-	while (all->save_moy[i] != find1 || i < all->nbrs.nbr_in_b)
-		i++;
-	// ft_printf("HELP1\n");
-	k = all->nbrs.nbr_in_b - 1;
-	while (all->save_moy[k] != find1 && k >= 0)
-		k--;
-	// ft_printf("HELP2\n");
-	if (i < k)
-		all->ct.find1 = i;
-	// ft_printf("HELP3\n");
-	if (i > k)
-		all->ct.find1 = k;
-	// ft_printf("HELP4\n");
-	i = 0;
-	while (all->save_moy[i] != find2 || i < all->nbrs.nbr_in_b)
-		i++;
-	// ft_printf("HELP5\n");
-	k = all->nbrs.nbr_in_b - 1;
-	while (all->save_moy[k] != find2 && k >= 0)
-		k--;
-	// ft_printf("HELP6\n");
-	if (i < k)
-		all->ct.find2 = i;
-	// ft_printf("HELP7\n");
-	if (i > k)
-		all->ct.find2 = k;
-	// ft_printf("HELP8\n");
 }
