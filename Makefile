@@ -24,7 +24,7 @@ PATH_SRC	= ./src/
 
 FILES 		= $(PATH_SRC)push_swap.c $(PATH_SRC)check_entry.c $(PATH_SRC)using_malloc.c \
 			$(PATH_SRC)moves_1.c $(PATH_SRC)moves_2.c $(PATH_SRC)utils.c $(PATH_SRC)big_run.c \
-			$(PATH_SRC)run02.c $(PATH_SRC)med_run.c \
+			$(PATH_SRC)run02.c \
 
 OBJS 		= $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(FILES))
 

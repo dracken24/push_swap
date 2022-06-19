@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 17:57:04 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/18 16:41:08 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 21:41:53 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,8 @@ void	ft_big_01(t_pslist *all)
 		while (all->nbrs.nbr_in_a)
 		{
 			ft_pb(all);
-			ft_print_stack(all);
 			if (all->stack_b[0] <= all->center_nbr && all->nbrs.nbr_in_b > 1)
-			{
 				ft_rb(all, 1);
-				ft_print_stack(all);
-			}
 		}
 	}
 	else
@@ -32,7 +28,6 @@ void	ft_big_01(t_pslist *all)
 	all->ct.ct2 = (all->nbrs.nbr_in_b - 1);
 	all->ct.kk = all->ct.ct2;
 	rec_b01(all);
-	ft_print_stack(all);
 }
 
 void	more_31(t_pslist *all)
@@ -40,20 +35,13 @@ void	more_31(t_pslist *all)
 	while (all->nbrs.nbr_in_a >= 31)
 	{
 		while (!(all->stack_a[0] >= all->less_15_nbr) || !(all->stack_a[0] <= all->plus_15_nbr))
-		{
 			ft_ra(all, 1);
-			ft_print_stack(all);
-		}
 
 		if ((all->stack_a[0] >= all->less_15_nbr) || (all->stack_a[0] <= all->plus_15_nbr))
 		{
 			ft_pb(all);
-			ft_print_stack(all);
 			if (all->stack_b[0] < all->center_nbr && all->nbrs.nbr_in_b > 1)
-			{
 				ft_rb(all, 1);
-				ft_print_stack(all);
-			}
 		}
 		if (all->nbrs.nbr_in_a > 31)
 			if (all->nbrs.nbr_entry - all->nbrs.nbr_in_a > all->diff)
@@ -63,22 +51,12 @@ void	more_31(t_pslist *all)
 
 void	rec_b01(t_pslist *all)
 {
-	if (all->nbrs.nbr_in_a >= 15)
-	{
-		all->plus_15_i += 15;
-		all->less_15_i -= 15;
-		all->plus_15_nbr = all->save_moy[all->plus_15_i];
-		all->less_15_nbr = all->save_moy[all->less_15_i];
-		all->diff = all->plus_15_i - all->less_15_i;
-	}
-	else
-	{
-		all->plus_15_i = all->nbrs.nbr_entry - 1;
-		all->less_15_i = 0;
-		all->plus_15_nbr = all->save_moy[all->plus_15_i];
-		all->less_15_nbr = all->save_moy[all->less_15_i];
-		all->diff = all->plus_15_i - all->less_15_i;
-	}
+	all->plus_15_i += 15;
+	all->less_15_i -= 15;
+	all->plus_15_nbr = all->save_moy[all->plus_15_i];
+	all->less_15_nbr = all->save_moy[all->less_15_i];
+	all->diff = all->plus_15_i - all->less_15_i;
+
 	if (all->nbrs.nbr_in_a)
 		ft_big_01(all);
 }
@@ -102,8 +80,8 @@ void	ft_big_02(t_pslist *all)
 		if (all->stack_a[0] > all->stack_a[1] && all->nbrs.nbr_in_a > 1)
 			ft_sa(all, 1);
 	}
-		if (all->nbrs.nbr_in_b)
-			ft_big_02(all);
+	if (all->nbrs.nbr_in_b)
+		ft_big_02(all);
 }
 
 void	b02_part1(t_pslist *all)

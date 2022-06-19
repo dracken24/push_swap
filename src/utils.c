@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 01:16:49 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/18 16:36:43 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 17:10:04 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,48 +33,12 @@ int ft_find_moy(t_pslist *all)
     }
     all->save_moy[all->ct.i] = '\0';
     all->nbrs.s_moy = all->save_moy[all->nbrs.nbr_entry / 2];
-    ft_printf("QRT; %d\nMED: %d\n3QRT:%d\n", all->nbrs.s_qrt, all->nbrs.s_moy, all->nbrs.s_3_qrt);
-    all->ct.i = -1;
-    while (++all->ct.i < all->nbrs.nbr_entry)
-        ft_printf("%d ", all->save_moy[all->ct.i]);
-    ft_printf("\n");
+    // ft_printf("QRT; %d\nMED: %d\n3QRT:%d\n", all->nbrs.s_qrt, all->nbrs.s_moy, all->nbrs.s_3_qrt);
+    // all->ct.i = -1;
+    // while (++all->ct.i < all->nbrs.nbr_entry)
+        // ft_printf("%d ", all->save_moy[all->ct.i]);
+    // ft_printf("\n");
     return (0);
-}
-
-bool    ft_wside(t_pslist *all)
-{
-    all->test += 1;
-    all->ct.ii = all->nbrs.nbr_in_b;
-    all->ct.i = - 1;
-    while (++all->ct.i < all->nbrs.nbr_in_b)
-    {
-        if (all->stack_b[all->ct.i] == all->save_moy[all->ct.kk])
-        {
-            if (all->ct.i < all->ct.ii / 2)
-                return (false);
-            else
-                return (true);
-        }
-    }
-    return (true);
-}
-
-bool    ft_wside_a(t_pslist *all)
-{
-    all->test += 1;
-    all->ct.ii = all->nbrs.nbr_in_a;
-    all->ct.i = - 1;
-    while (++all->ct.i < all->nbrs.nbr_in_a)
-    {
-        if (all->stack_a[all->ct.i] == all->save_moy[all->ct.kk])
-        {
-            if (all->ct.i < all->ct.ii / 2)
-                return (false);
-            else
-                return (true);
-        }
-    }
-    return (true);
 }
 
 void    ft_print_stack(t_pslist *all)

@@ -1,92 +1,12 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap'
+ 
 make -C ./ft_printf
 make[1]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf'
 make -C ./libft
 make[2]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf/libft'
-gcc -Wall -Werror -Wextra   -c -o math/ft_ultimate_range.o math/ft_ultimate_range.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_putnbr.o math/ft_putnbr.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_range.o math/ft_range.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_swap.o math/ft_swap.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_rev_int_tab.o math/ft_rev_int_tab.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_nbrlen.o math/ft_nbrlen.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_putnbr_fd.o math/ft_putnbr_fd.c
-gcc -Wall -Werror -Wextra   -c -o math/ft_p_or_imp.o math/ft_p_or_imp.c
-gcc -Wall -Werror -Wextra   -c -o mem_alloc/ft_bzero.o mem_alloc/ft_bzero.c
-gcc -Wall -Werror -Wextra   -c -o mem_alloc/ft_calloc.o mem_alloc/ft_calloc.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstmap.o lst/ft_lstmap.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstiter.o lst/ft_lstiter.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstclear.o lst/ft_lstclear.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstdelone.o lst/ft_lstdelone.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstadd_back.o lst/ft_lstadd_back.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstlast.o lst/ft_lstlast.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstsize.o lst/ft_lstsize.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstadd_front.o lst/ft_lstadd_front.c
-gcc -Wall -Werror -Wextra   -c -o lst/ft_lstnew.o lst/ft_lstnew.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strlen.o str/ft_strlen.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strlcpy.o str/ft_strlcpy.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strlcat.o str/ft_strlcat.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strrchr.o str/ft_strrchr.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strncmp.o str/ft_strncmp.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strnstr.o str/ft_strnstr.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strtrim.o str/ft_strtrim.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strmapi.o str/ft_strmapi.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_striteri.o str/ft_striteri.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strdup.o str/ft_strdup.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_substr.o str/ft_substr.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strjoin.o str/ft_strjoin.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strcat.o str/ft_strcat.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_putchar_fd.o str/ft_putchar_fd.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_putstr_fd.o str/ft_putstr_fd.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_toupper.o str/ft_toupper.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_tolower.o str/ft_tolower.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_putendl_fd.o str/ft_putendl_fd.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_strchr.o str/ft_strchr.c
-gcc -Wall -Werror -Wextra   -c -o str/ft_split.o str/ft_split.c
-gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memset.o mem_move/ft_memset.c
-gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memmove.o mem_move/ft_memmove.c
-gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memcmp.o mem_move/ft_memcmp.c
-gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memcpy.o mem_move/ft_memcpy.c
-gcc -Wall -Werror -Wextra   -c -o is/ft_isalpha.o is/ft_isalpha.c
-gcc -Wall -Werror -Wextra   -c -o is/ft_isdigit.o is/ft_isdigit.c
-gcc -Wall -Werror -Wextra   -c -o is/ft_isalnum.o is/ft_isalnum.c
-gcc -Wall -Werror -Wextra   -c -o is/ft_isascii.o is/ft_isascii.c
-gcc -Wall -Werror -Wextra   -c -o is/ft_isprint.o is/ft_isprint.c
-gcc -Wall -Werror -Wextra   -c -o atoitoa/ft_atoi.o atoitoa/ft_atoi.c
-gcc -Wall -Werror -Wextra   -c -o atoitoa/ft_itoa.o atoitoa/ft_itoa.c
-echo [35m"LA LIBFT SE COMPILE COMME UNE GRANDE...""\033[0m"
-ar -rcs libft.a ./math/ft_ultimate_range.o ./math/ft_putnbr.o ./math/ft_range.o ./math/ft_swap.o ./math/ft_rev_int_tab.o ./math/ft_nbrlen.o ./math/ft_putnbr_fd.o ./math/ft_p_or_imp.o ./mem_alloc/ft_bzero.o ./mem_alloc/ft_calloc.o ./lst/ft_lstmap.o ./lst/ft_lstiter.o ./lst/ft_lstclear.o ./lst/ft_lstdelone.o ./lst/ft_lstadd_back.o ./lst/ft_lstlast.o ./lst/ft_lstsize.o ./lst/ft_lstadd_front.o ./lst/ft_lstnew.o ./str/ft_strlen.o ./str/ft_strlcpy.o ./str/ft_strlcat.o ./str/ft_strrchr.o ./str/ft_strncmp.o ./str/ft_strnstr.o ./str/ft_strtrim.o ./str/ft_strmapi.o ./str/ft_striteri.o ./str/ft_strdup.o ./str/ft_substr.o ./str/ft_strjoin.o ./str/ft_strcat.o ./str/ft_putchar_fd.o ./str/ft_putstr_fd.o ./str/ft_toupper.o ./str/ft_tolower.o ./str/ft_strmapi.o ./str/ft_striteri.o ./str/ft_putendl_fd.o ./str/ft_strchr.o ./str/ft_split.o ./mem_move/ft_memset.o ./mem_move/ft_memmove.o ./mem_move/ft_memcmp.o ./mem_move/ft_memcpy.o ./is/ft_isalpha.o ./is/ft_isdigit.o ./is/ft_isalnum.o ./is/ft_isascii.o ./is/ft_isprint.o ./atoitoa/ft_atoi.o ./atoitoa/ft_itoa.o
-echo [32m"LIBFT READY FOR NEXT !!!""\033[0m"
+make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf/libft'
-gcc -Wall -Werror -Wextra   -c -o ft_hexa.o ft_hexa.c
-gcc -Wall -Werror -Wextra   -c -o ft_printf.o ft_printf.c
-gcc -Wall -Werror -Wextra   -c -o ft_put.o ft_put.c
-echo "COMPILE MOI CE PRINTF LA...""\033[0m"
-cp ./libft/libft.a libftprintf.a
-ar -rcs libftprintf.a ft_hexa.o ft_printf.o ft_put.o
-echo "MALADE CA A COMPILER !!!""\033[0m"
 make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf'
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/push_swap.c -o objs/push_swap.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/check_entry.c -o objs/check_entry.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/using_malloc.c -o objs/using_malloc.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/moves_1.c -o objs/moves_1.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/moves_2.c -o objs/moves_2.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/utils.c -o objs/utils.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/big_run.c -o objs/big_run.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/run02.c -o objs/run02.o
-mkdir -p ./objs/
-gcc -Wall -Werror -Wextra -c src/med_run.c -o objs/med_run.o
-echo [35m"COMPILE MOI CE PUSH_SWAP LA...""\033[0m"
-cp ft_printf/libftprintf.a push_swap.a
-gcc -Wall -Werror -Wextra  ./objs/push_swap.o  ./objs/check_entry.o  ./objs/using_malloc.o  ./objs/moves_1.o  ./objs/moves_2.o  ./objs/utils.o  ./objs/big_run.o  ./objs/run02.o  ./objs/med_run.o ft_printf/libftprintf.a -Og -o push_swap
-echo [35m"ENFIN, LA LUMIERE AU BOUT DU TUNEL !!!""\033[0m"
 make: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap'
  

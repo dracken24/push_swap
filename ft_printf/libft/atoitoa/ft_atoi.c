@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 10:40:00 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 21:41:40 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 17:35:51 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ long int	ft_atoi(const char *str)
 	}
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		if (numb < INT_MIN || numb > INT_MAX)
-			return (9);
 		numb = (str[i++] - '0') + (numb * 10);
 		if (!(str[i] >= '0' && str[i] <= '9'))
 			return (numb * ctmin);
+		if (numb < INT_MIN || numb > INT_MAX)
+			return (9);
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 13:47:29 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 18:51:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 			return (false);
 	}
 	all->ct.ct = save_nbr(nb_arg, entry, all);
-	if (all->ct.ct == 0)
+	if (all->ct.ct == false)
 	{
 		free(all->stack_a);
 		return (false);
@@ -36,14 +36,20 @@ int	check_entry(int nb_arg, char **entry, t_pslist *all)
     all->ct.i = 0;
     while (++all->ct.i < nb_arg)
     {
-        all->ct.k = -1;
-        while (entry[all->ct.i][++all->ct.k])
+		all->ct.k = -1;
+		if (entry[all->ct.i][0] == '-')
+			all->ct.k += 1;
+		if (entry[all->ct.i][1] == '\0' && entry[all->ct.i][0] == '-')
+			return (false);
+		while (entry[all->ct.i][++all->ct.k])
 		{
-            if ((entry[all->ct.i][all->ct.k] < '0' || entry[all->ct.i][all->ct.k] > '9')
-					&& (entry[all->ct.i][all->ct.k] != '-'))
+            if (entry[all->ct.i][all->ct.k] < '0' || entry[all->ct.i][all->ct.k] > '9')
                 return (false);
-			if (entry[all->ct.i][0] == '-' && entry[all->ct.i][1] == '\0')
-				return (false);
+			if (all->ct.k > 13)
+			{
+				write(2, "Error\n", 6);
+				exit(0);
+			}
 		}
 	}
     all->ct.i = check_doub(nb_arg, entry, all);

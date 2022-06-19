@@ -19,17 +19,21 @@ int	main(int nb_arg, char **entry)
 	ft_init_variables(&all);
 	ft_check_all(nb_arg, entry, &all);
 	if (all.ct.ct == 0)
-		return (0);
+	{
+		write(2, "Error\n", 6);
+		exit (0);
+	}
 	all.ct.ct = ft_run_prog(&all);
 	if (all.ct.ct == true)
 	{
 		free(all.stack_a);
 		free(all.stack_b);
 		free(all.save_moy);
-		return (true);
+		write(2, "Error\n", 6);
+		exit (0);
 	}
-	ft_printf("\nFINALE---------------------------------------------------->>\n");
-	ft_print_stack(&all);
+	// ft_printf("\nFINALE---------------------------------------------------->>\n");
+	// ft_print_stack(&all);
 
 	free(all.stack_a);
 	free(all.stack_b);
@@ -49,6 +53,7 @@ int	ft_run_prog(t_pslist *all)
 	if (all->nbrs.nbr_entry > 5)
 	{
 		ft_big_01(all);
+		// ft_print_stack(all);
 		ft_big_02(all);
 	}
 	return (false);

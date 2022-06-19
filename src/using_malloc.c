@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 14:56:20 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 21:46:31 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 21:38:46 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,17 @@ bool	save_nbr(int nb_arg, char **entry, t_pslist *all)
 	while (++i < nb_arg)
 	{
 		if (ft_atoi(entry[i]) > INT_MAX || ft_atoi(entry[i]) < INT_MIN)
-			exit(ft_printf("Over int limit"));
+		{
+			free(all->stack_a);
+			free(all->stack_b);
+			free(all->save_moy);
+			write(2, "Error\n", 6);
+			exit(0);
+		}
 		all->stack_a[k] = ft_atoi(entry[i]);
-		ft_printf("%d ", all->stack_a[k]);
 		k++;
 	}
 	all->nbrs.nbr_entry = (i - 1);
-	ft_printf("nbr_entry: %d\n", all->nbrs.nbr_entry);
 	all->stack_a[i] = '\0';
 	all->nbrs.nbr_in_a = all->nbrs.nbr_entry;
 	return (true);
@@ -91,6 +95,7 @@ bool	ft_pa2(t_pslist *all)
 	all->total_count += 1;
 	all->nbrs.nbr_in_a += 1;
 	all->nbrs.nbr_in_b -= 1;
+	ft_printf("pa\n");
 	free(all->nbr);
 	return (true);
 }
@@ -143,6 +148,7 @@ bool	ft_pb2(t_pslist *all)
 	all->total_count += 1;
 	all->nbrs.nbr_in_b += 1;
 	all->nbrs.nbr_in_a -= 1;
+	ft_printf("pb\n");
 	free(all->nbr);
 	return (true);
 }

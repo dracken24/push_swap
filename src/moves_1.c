@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 16:11:38 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 13:48:31 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 21:39:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ void	ft_sa(t_pslist *all, int ct)
 	all->stack_a[0] = all->stack_a[1];
 	all->stack_a[1] = all->temp;
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("sa\n");
+	}
 }
 
 void	ft_sb(t_pslist *all, int ct)
@@ -34,7 +37,10 @@ void	ft_sb(t_pslist *all, int ct)
 	all->stack_b[1] = all->temp;
 	all->total_count += 1;
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("sb\n");
+	}
 }
 
 void	ft_ss(t_pslist *all, int ct)
@@ -43,6 +49,7 @@ void	ft_ss(t_pslist *all, int ct)
 	ft_sa(all, ct);
 	ft_sb(all, ct);
 	all->total_count += 1;
+	ft_printf("ss\n");
 }
 
 void	ft_ra(t_pslist *all, int ct)
@@ -60,7 +67,10 @@ void	ft_ra(t_pslist *all, int ct)
 	all->stack_a[all->ct.i - 1] = all->stack_a[all->ct.i];
 	all->stack_a[all->ct.i] = all->temp;
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("ra\n");
+	}
 }
 
 void	ft_rb(t_pslist *all, int ct)
@@ -78,5 +88,8 @@ void	ft_rb(t_pslist *all, int ct)
 	all->stack_b[all->ct.i - 1] = all->stack_b[all->ct.i];
 	all->stack_b[all->ct.i] = all->temp;
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("rb\n");
+	}
 }

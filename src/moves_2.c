@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 00:28:13 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/17 13:48:43 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/18 21:39:13 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	ft_rr(t_pslist *all)
 	ft_ra(all, 0);
 	ft_rb(all, 0);
 	all->total_count += 1;
+	ft_printf("rr\n");
 }
 
 void	ft_rra(t_pslist *all, int ct)
@@ -43,10 +44,13 @@ void	ft_rra(t_pslist *all, int ct)
 			all->len--;
 		}
 		all->stack_a[0] = all->nbr[0];
-		
-	}free(all->nbr);
+	}
+	free(all->nbr);
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("rra\n");
+	}
 }
 
 void	ft_rrb(t_pslist *all, int ct)
@@ -72,10 +76,13 @@ void	ft_rrb(t_pslist *all, int ct)
 			all->len--;
 		}
 		all->stack_b[0] = all->nbr[0];
-		free(all->nbr);
 	}
+	free(all->nbr);
 	if (ct == 1)
+	{
 		all->total_count += 1;
+		ft_printf("rrb\n");
+	}
 }
 
 void	ft_rrr(t_pslist *all)
@@ -83,4 +90,5 @@ void	ft_rrr(t_pslist *all)
 	ft_rra(all, 0);
 	ft_rrb(all, 0);
 	all->total_count += 1;
+	ft_printf("rrr\n");
 }
