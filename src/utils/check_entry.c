@@ -6,11 +6,11 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 15:25:24 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/20 12:55:25 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../sources/push_swap.h"
+#include "../../sources/push_swap.h"
 
 int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 {
@@ -25,7 +25,7 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 	all->ct.ct = save_nbr(nb_arg, entry, all);
 	if (all->ct.ct == false)
 	{
-		free(all->stack_a);
+		free(all->s_a);
 		return (false);
 	}
 	return (true);
@@ -33,9 +33,9 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 
 int	check_entry(int nb_arg, char **entry, t_pslist *all)
 {
-    all->ct.i = 0;
-    while (++all->ct.i < nb_arg)
-    {
+	all->ct.i = 0;
+	while (++all->ct.i < nb_arg)
+	{
 		all->ct.k = -1;
 		if (entry[all->ct.i][0] == '-')
 			all->ct.k += 1;
@@ -43,8 +43,9 @@ int	check_entry(int nb_arg, char **entry, t_pslist *all)
 			return (false);
 		while (entry[all->ct.i][++all->ct.k])
 		{
-            if (entry[all->ct.i][all->ct.k] < '0' || entry[all->ct.i][all->ct.k] > '9')
-                return (false);
+			if (entry[all->ct.i][all->ct.k] < '0'
+				|| entry[all->ct.i][all->ct.k] > '9')
+				return (false);
 			if (all->ct.k > 13)
 			{
 				write(2, "Error\n", 6);
@@ -52,8 +53,8 @@ int	check_entry(int nb_arg, char **entry, t_pslist *all)
 			}
 		}
 	}
-    all->ct.i = check_doub(nb_arg, entry, all);
-    return (all->ct.i);
+	all->ct.i = check_doub(nb_arg, entry, all);
+	return (all->ct.i);
 }
 
 int	check_doub(int nb_arg, char **entry, t_pslist *all)
@@ -63,7 +64,8 @@ int	check_doub(int nb_arg, char **entry, t_pslist *all)
 	{
 		all->ct.k = all->ct.i;
 		while (++all->ct.k < nb_arg)
-			if ((!ft_strncmp(entry[all->ct.i], entry[all->ct.k], ft_strlen(entry[all->ct.i]))
+			if ((!ft_strncmp(entry[all->ct.i], entry[all->ct.k],
+						ft_strlen(entry[all->ct.i]))
 					&& !ft_strncmp(entry[all->ct.k], entry[all->ct.i],
 						ft_strlen(entry[all->ct.k]))) != 0)
 				return (false);
@@ -76,21 +78,21 @@ int	ft_check_order(t_pslist *all)
 	all->ct.i = 0;
 	all->ct.k = 0;
 	if (all->nbrs.nbr_entry == 1)
-		return(true);
+		return (true);
 	if (all->nbrs.nbr_entry == 5)
 		all->ct.k = 2;
 	if (all->nbrs.nbr_entry == 4)
 		all->ct.k = 1;
 	else if (all->nbrs.nbr_entry == 2)
 	{
-		if (all->stack_a[0] > all->stack_a[1])
+		if (all->s_a[0] > all->s_a[1])
 			ft_ra(all, 1);
 		return (true);
 	}
 	while (all->ct.i < all->nbrs.nbr_in_a)
 	{
-		if (all->stack_a[all->ct.i] != all->save_moy[all->ct.k])
-			return(false);
+		if (all->s_a[all->ct.i] != all->save_moy[all->ct.k])
+			return (false);
 		all->ct.i++;
 		all->ct.k++;
 	}

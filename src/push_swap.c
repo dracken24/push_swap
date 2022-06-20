@@ -26,17 +26,14 @@ int	main(int nb_arg, char **entry)
 	all.ct.ct = ft_run_prog(&all);
 	if (all.ct.ct == true)
 	{
-		free(all.stack_a);
-		free(all.stack_b);
+		free(all.s_a);
+		free(all.s_b);
 		free(all.save_moy);
 		write(2, "Error\n", 6);
 		exit (0);
 	}
-	// ft_printf("\nFINALE---------------------------------------------------->>\n");
-	// ft_print_stack(&all);
-
-	free(all.stack_a);
-	free(all.stack_b);
+	free(all.s_a);
+	free(all.s_b);
 	free(all.save_moy);
 	return (0);
 }
@@ -96,11 +93,11 @@ void	ft_init_variables(t_pslist *all)
 	all->ct.x = 0;
 	all->nbrs.nbr_entry = 0;
 	all->nbrs.nbr_in_b = 0;
-	all->nbrs.s_3_qrt =	0;
+	all->nbrs.s_3_qrt = 0;
 	all->nbrs.s_qrt = 0;
 	all->nbrs.s_moy = 0;
 	all->total_count = 0;
-	all->temp =	0;
+	all->temp = 0;
 	all->nbr = 0;
 	all->len = 0;
 }

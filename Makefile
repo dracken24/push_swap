@@ -21,10 +21,13 @@ RESET		= "\033[0m"
 
 PATH_OBJS 	= ./objs/
 PATH_SRC	= ./src/
+PATH_RUN	= ./src/run/
+PATH_UTILS  = ./src/utils/
 
-FILES 		= $(PATH_SRC)push_swap.c $(PATH_SRC)check_entry.c $(PATH_SRC)using_malloc.c \
-			$(PATH_SRC)moves_1.c $(PATH_SRC)moves_2.c $(PATH_SRC)utils.c $(PATH_SRC)big_run.c \
-			$(PATH_SRC)run02.c $(PATH_SRC)med_run_1.c \
+FILES 		= $(PATH_SRC)push_swap.c $(PATH_UTILS)check_entry.c $(PATH_UTILS)using_malloc.c \
+			$(PATH_UTILS)moves_1.c $(PATH_UTILS)moves_2.c $(PATH_UTILS)utils.c $(PATH_RUN)big_run.c \
+			$(PATH_RUN)run02.c $(PATH_RUN)med_run_1.c $(PATH_UTILS)utils_2.c \
+			$(PATH_RUN)med_run_2.c $(PATH_RUN)big_run_2.c \
 
 OBJS 		= $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(FILES))
 
@@ -53,6 +56,8 @@ $(NAME): $(OBJS)
 
 $(PATH_OBJS)%.o:	$(PATH_SRC)%.c
 	@mkdir -p $(PATH_OBJS)
+	@mkdir -p $(PATH_OBJS)utils
+	@mkdir -p $(PATH_OBJS)run
 	$(CC) $(CFLAGS) -c $< -o $@
 
 make_lib:

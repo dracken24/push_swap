@@ -6,11 +6,11 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 00:28:13 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/19 14:56:37 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/20 12:56:23 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../sources/push_swap.h"
+#include "../../sources/push_swap.h"
 
 void	ft_rr(t_pslist *all)
 // ra et rb en même temps.
@@ -34,22 +34,27 @@ void	ft_rra(t_pslist *all, int ct)
 		free(all->nbr);
 		return ;
 	}
-	if (all->stack_a)
-	{
-		all->nbr[0] = all->stack_a[all->len];
-		all->nbr[1] = '\0';
-		while (all->len >= 0)
-		{
-			all->stack_a[all->len] = all->stack_a[all->len -1];
-			all->len--;
-		}
-		all->stack_a[0] = all->nbr[0];
-	}
+	ft_rra_p2(all);
 	free(all->nbr);
 	if (ct == 1)
 	{
 		all->total_count += 1;
 		ft_printf("rra\n");
+	}
+}
+
+void	ft_rra_p2(t_pslist *all)
+{
+	if (all->s_a)
+	{
+		all->nbr[0] = all->s_a[all->len];
+		all->nbr[1] = '\0';
+		while (all->len >= 0)
+		{
+			all->s_a[all->len] = all->s_a[all->len - 1];
+			all->len--;
+		}
+		all->s_a[0] = all->nbr[0];
 	}
 }
 
@@ -66,17 +71,7 @@ void	ft_rrb(t_pslist *all, int ct)
 		free(all->nbr);
 		return ;
 	}
-	if (all->stack_b)
-	{
-		all->nbr[0] = all->stack_b[all->len];
-		all->nbr[1] = '\0';
-		while (all->len >= 0)
-		{
-			all->stack_b[all->len] = all->stack_b[all->len - 1];
-			all->len--;
-		}
-		all->stack_b[0] = all->nbr[0];
-	}
+	ft_rrb_p2(all);
 	free(all->nbr);
 	if (ct == 1)
 	{
@@ -85,10 +80,17 @@ void	ft_rrb(t_pslist *all, int ct)
 	}
 }
 
-void	ft_rrr(t_pslist *all)
+void	ft_rrb_p2(t_pslist *all)
 {
-	ft_rra(all, 0);
-	ft_rrb(all, 0);
-	all->total_count += 1;
-	ft_printf("rrr\n");
+	if (all->s_b)
+	{
+		all->nbr[0] = all->s_b[all->len];
+		all->nbr[1] = '\0';
+		while (all->len >= 0)
+		{
+			all->s_b[all->len] = all->s_b[all->len - 1];
+			all->len--;
+		}
+		all->s_b[0] = all->nbr[0];
+	}
 }

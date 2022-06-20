@@ -11,19 +11,19 @@
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
-#define PUSH_SWAP_H
+# define PUSH_SWAP_H
 
-#include <stdbool.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include "../ft_printf/ft_printf.h"
-#include "../ft_printf/libft/libft.h"
+# include <stdbool.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include "../ft_printf/ft_printf.h"
+# include "../ft_printf/libft/libft.h"
 
-#define INT_MIN -2147483648
-#define INT_MAX 2147483647
+# define INT_MIN -2147483648
+# define INT_MAX 2147483647
 
-typedef struct	p_ct {
+typedef struct p_ct {
 	int		i;
 	int		k;
 	int		x;
@@ -35,7 +35,7 @@ typedef struct	p_ct {
 	int		find2;
 }	t_ct;
 
-typedef struct	p_nbr {
+typedef struct p_nbr {
 	int		nbr_entry;
 	int		nbr_in_a;
 	int		nbr_in_b;
@@ -44,11 +44,11 @@ typedef struct	p_nbr {
 	int		s_3_qrt;
 }	t_nbr;
 
-typedef struct	p_list {
+typedef struct p_list {
 	int		total_count;
 	int		*save_moy;
-	int		*stack_a;
-	int		*stack_b;
+	int		*s_a;
+	int		*s_b;
 	int		*nbr;
 	int		temp;
 	int		len;
@@ -77,6 +77,7 @@ int		ft_check_order(t_pslist *all);
 int		ft_run_prog(t_pslist *all);
 int		ft_find_moy(t_pslist *all);
 
+void	save_nbr_p2(t_pslist *all, char **entry, int i, int k);
 void	alloc_tab(int nb_arg, char **entry, t_pslist *all);
 void	ft_init_variables(t_pslist *all);
 void	ft_print_stack(t_pslist *all);
@@ -107,6 +108,8 @@ void	ft_sb(t_pslist *all, int ct);
 void	ft_ss(t_pslist *all, int ct);
 void	ft_ra(t_pslist *all, int ct);
 void	ft_rb(t_pslist *all, int ct);
+void	ft_rra_p2(t_pslist *all);
+void	ft_rrb_p2(t_pslist *all);
 void	ft_rr(t_pslist *all);
 void	ft_rrr(t_pslist *all);
 
