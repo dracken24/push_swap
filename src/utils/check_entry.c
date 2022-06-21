@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/20 12:55:25 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/21 16:37:39 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,3 @@ int	ft_check_order(t_pslist *all)
 	}
 	return (true);
 }
-

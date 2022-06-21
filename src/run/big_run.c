@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 17:57:04 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/20 12:56:05 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/21 16:37:52 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ void	more_31(t_pslist *all)
 		while (!(all->s_a[0] >= all->less_15_nbr)
 			|| !(all->s_a[0] <= all->plus_15_nbr))
 			ft_ra(all, 1);
-
 		if ((all->s_a[0] >= all->less_15_nbr)
 			|| (all->s_a[0] <= all->plus_15_nbr))
 		{
@@ -58,7 +57,6 @@ void	rec_b01(t_pslist *all)
 	all->plus_15_nbr = all->save_moy[all->plus_15_i];
 	all->less_15_nbr = all->save_moy[all->less_15_i];
 	all->diff = all->plus_15_i - all->less_15_i;
-
 	if (all->nbrs.nbr_in_a)
 		ft_big_01(all);
 }
