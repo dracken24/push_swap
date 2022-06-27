@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/21 16:37:39 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/27 17:39:04 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,14 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 {
 	if (nb_arg > 1)
 	{
-		all->ct.ct = check_entry(nb_arg, entry, all);
+		// ft_printf("%s\n", entry[1]);
+		if (ft_strchr(entry[1], ' '))
+		{
+			all->ct.ct = split_this(nb_arg, entry, all);
+			ft_printf("TESTT\n");
+		}
+		else
+			all->ct.ct = check_entry(nb_arg, entry, all);
 		if (all->ct.ct == 0)
 			return (false);
 		else if (all->ct.ct == -1)
@@ -33,6 +40,7 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 
 int	check_entry(int nb_arg, char **entry, t_pslist *all)
 {
+	// ft_printf("HEK_ENTRY\n");
 	all->ct.i = 0;
 	while (++all->ct.i < nb_arg)
 	{

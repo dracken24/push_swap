@@ -25,7 +25,8 @@ PATH_RUN	= ./src/run/
 PATH_UTILS  = ./src/utils/
 
 FILES 		= $(PATH_SRC)push_swap.c $(PATH_UTILS)check_entry.c $(PATH_UTILS)using_malloc.c \
-			$(PATH_UTILS)moves_1.c $(PATH_UTILS)moves_2.c $(PATH_UTILS)utils.c $(PATH_RUN)big_run.c \
+			$(PATH_UTILS)moves_1.c $(PATH_UTILS)moves_2.c $(PATH_UTILS)utils.c $(PATH_UTILS)split_this.c \
+			$(PATH_RUN)big_run.c \
 			$(PATH_RUN)run02.c $(PATH_RUN)med_run_1.c $(PATH_UTILS)utils_2.c \
 			$(PATH_RUN)med_run_2.c $(PATH_RUN)big_run_2.c \
 
