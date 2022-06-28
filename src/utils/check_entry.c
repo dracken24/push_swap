@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/27 20:24:39 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/28 15:55:00 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,18 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 {
 	if (nb_arg > 1)
 	{
-		// ft_printf("%s\n", entry[1]);
 		if (ft_strchr(entry[1], ' '))
-		{
-			split_this(nb_arg, entry, all);
-			ft_printf("TESTT\n");
-		}
+			all->ct.ct = split_this(nb_arg, entry, all);
 		else
+		{
 			all->ct.ct = check_entry(nb_arg, entry, all);
-		if (all->ct.ct == 0)
-			return (false);
-		else if (all->ct.ct == -1)
-			return (false);
+			if (all->ct.ct == 0)
+				return (false);
+			else if (all->ct.ct == -1)
+				return (false);
+			all->ct.ct = save_nbr(nb_arg, entry, all);
+		}
 	}
-	all->ct.ct = save_nbr(nb_arg, entry, all);
 	if (all->ct.ct == false)
 	{
 		free(all->s_a);
@@ -40,13 +38,6 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 
 int	check_entry(int nb_arg, char **entry, t_pslist *all)
 {
-	int i = -1;
-	ft_printf("ARG2: %d\n", nb_arg);
-	while (entry[++i])
-	{
-		ft_printf("f: %s\n", entry[i]);
-	}
-	ft_printf("CHEK_ENTRY\n");
 	all->ct.i = 0;
 	while (++all->ct.i < nb_arg)
 	{
@@ -55,7 +46,7 @@ int	check_entry(int nb_arg, char **entry, t_pslist *all)
 			all->ct.k += 1;
 		if (entry[all->ct.i][1] == '\0' && entry[all->ct.i][0] == '-')
 			return (false);
-		while (entry[all->ct.i][++all->ct.k])
+		while (++all->ct.k < (int)ft_strlen(entry[all->ct.i]))
 		{
 			if (entry[all->ct.i][all->ct.k] < '0'
 				|| entry[all->ct.i][all->ct.k] > '9')

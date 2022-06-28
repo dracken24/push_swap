@@ -45,6 +45,7 @@ typedef struct p_nbr {
 }	t_nbr;
 
 typedef struct p_list {
+	char	**tmp;
 	int		total_count;
 	int		*save_moy;
 	int		*s_a;
@@ -73,7 +74,7 @@ bool	ft_wside2(t_pslist *all, int to_find);
 int		ft_check_all(int nb_arg, char **entry, t_pslist *all);
 int		check_entry(int nb_arg, char **entry, t_pslist *all);
 int		check_doub(int nb_arg, char **entry, t_pslist *all);
-void	split_this(int nb_arg, char **entry, t_pslist *all);
+int		split_this(int nb_arg, char **entry, t_pslist *all);
 int		ft_check_order(t_pslist *all);
 int		ft_run_prog(t_pslist *all);
 int		ft_find_moy(t_pslist *all);
