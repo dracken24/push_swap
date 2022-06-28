@@ -5,17 +5,15 @@ make -C ./ft_printf
 make -C ./libft
  
 # make[2]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf/libft'
- 
-make[2]: *** No rule to make target 'math/ft_ultimate_range.o', needed by 'libft.a'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sun Jun 19 16:51:32 2022
+# Make data base, printed on Tue Jun 21 19:33:40 2022
 
 # Variables
 
@@ -38,7 +36,7 @@ MEM_A = ./mem_alloc/
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3b952534-6745-43a8-9ae9-1748ec598bd4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-182a8c7a-9007-4d68-b419-23c739da81d1.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -136,7 +134,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3853
+VSCODE_PID = 5344
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -144,7 +142,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2677,unix/Dracken24:/tmp/.ICE-unix/2677
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2642,unix/Dracken24:/tmp/.ICE-unix/2642
 # automatic
 *F = $(notdir $*)
 # environment
@@ -190,7 +188,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = f029f5c0bddb4eef9fd8430452c56e46
+INVOCATION_ID = 95f00579e85549e78f7190f4a19c8d7d
 # environment
 SNAP_REVISION = 99
 # environment
@@ -228,7 +226,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2702
+SYSTEMD_EXEC_PID = 2668
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -250,11 +248,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2102
+MANAGERPID = 2064
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3589
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5298
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -272,7 +270,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:41055
+JOURNAL_STREAM = 8:20024
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -284,13 +282,9 @@ HOME = /home/dracken24
 # environment
 QT_IM_MODULE = ibus
 # environment
- 
 ELECTRON_RUN_AS_NODE = 1
- 
 # environment
- 
 VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.68.1-main.sock
- 
 # environment
 SNAP_NAME = code
 # environment
@@ -304,7 +298,6 @@ LST = ./lst/
 # environment
 SNAP_VERSION = 30d9c6cd
 # default
- 
 SUFFIXES := 
 # environment
 VSCODE_CLI = 1
@@ -313,6 +306,9 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 SNAP_COMMON = /var/snap/code/common
 # default
+ 
+make[2]: *** No rule to make target 'math/ft_ultimate_range.o', needed by 'libft.a'.  Stop.
+
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 50)
 CC = gcc
@@ -327,6 +323,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
+ 
 # Load=151/1024=15%, Rehash=0, Collisions=50/239=21%
 
 # Pattern-specific Variable Values
@@ -350,9 +347,7 @@ lst/ft_lstiter.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
- 
 libft.a: math/ft_ultimate_range.o math/ft_putnbr.o math/ft_range.o math/ft_swap.o math/ft_rev_int_tab.o math/ft_nbrlen.o math/ft_putnbr_fd.o math/ft_p_or_imp.o mem_alloc/ft_bzero.o mem_alloc/ft_calloc.o lst/ft_lstmap.o lst/ft_lstiter.o lst/ft_lstclear.o lst/ft_lstdelone.o lst/ft_lstadd_back.o lst/ft_lstlast.o lst/ft_lstsize.o lst/ft_lstadd_front.o lst/ft_lstnew.o str/ft_strlen.o str/ft_strlcpy.o str/ft_strlcat.o str/ft_strrchr.o str/ft_strncmp.o str/ft_strnstr.o str/ft_strtrim.o str/ft_strmapi.o str/ft_striteri.o str/ft_strdup.o str/ft_substr.o str/ft_strjoin.o str/ft_strcat.o str/ft_putchar_fd.o str/ft_putstr_fd.o str/ft_toupper.o str/ft_tolower.o str/ft_strmapi.o str/ft_striteri.o str/ft_putendl_fd.o str/ft_strchr.o str/ft_split.o mem_move/ft_memset.o mem_move/ft_memmove.o mem_move/ft_memcmp.o mem_move/ft_memcpy.o is/ft_isalpha.o is/ft_isdigit.o is/ft_isalnum.o is/ft_isascii.o is/ft_isprint.o atoitoa/ft_atoi.o atoitoa/ft_itoa.o
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -399,7 +394,6 @@ math/ft_putnbr_fd.o:
 #  File has not been updated.
 
 # Not a target:
- 
 math/ft_rev_int_tab.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -462,7 +456,6 @@ lst/ft_lstmap.o:
 
 # Not a target:
 str/ft_strjoin.o:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -555,7 +548,6 @@ mem_move/ft_memset.o:
 
 # Not a target:
 .DEFAULT:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -608,7 +600,6 @@ gitp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 64):
 	@(git add .)
 	@(git commit -m "nadesjar42")
@@ -633,7 +624,6 @@ lst/ft_lstlast.o:
 #  File has not been updated.
 
 # Not a target:
- 
 str/ft_strncmp.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -642,9 +632,9 @@ str/ft_strncmp.o:
 # Not a target:
 str/ft_strlcpy.o:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 lst/ft_lstnew.o:
@@ -715,7 +705,6 @@ str/ft_putstr_fd.o:
 is/ft_isascii.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # files hash-table stats:
@@ -732,7 +721,7 @@ is/ft_isascii.o:
 # strcache performance: lookups = 94 / hit rate = 21%
 # hash-table stats:
 # Load=74/8192=1%, Rehash=0, Collisions=1/94=1%
-# Finished Make data base on Sun Jun 19 16:51:32 2022
+# Finished Make data base on Tue Jun 21 19:33:40 2022
 
 # make[2]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf/libft'
  
@@ -745,7 +734,7 @@ make[1]: *** [Makefile:44: make_lib] Error 2
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 19 16:51:32 2022
+# Make data base, printed on Tue Jun 21 19:33:40 2022
 
 # Variables
 
@@ -768,7 +757,7 @@ HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3b952534-6745-43a8-9ae9-1748ec598bd4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-182a8c7a-9007-4d68-b419-23c739da81d1.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -862,7 +851,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3853
+VSCODE_PID = 5344
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -870,7 +859,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2677,unix/Dracken24:/tmp/.ICE-unix/2677
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2642,unix/Dracken24:/tmp/.ICE-unix/2642
 # automatic
 *F = $(notdir $*)
 # environment
@@ -916,7 +905,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = f029f5c0bddb4eef9fd8430452c56e46
+INVOCATION_ID = 95f00579e85549e78f7190f4a19c8d7d
 # environment
 SNAP_REVISION = 99
 # environment
@@ -939,6 +928,7 @@ LS_COLORS =
 +F = $(notdir $+)
 # environment
 LESS = -R
+ 
 # environment
 DESKTOP_SESSION = ubuntu
 # environment
@@ -954,7 +944,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2702
+SYSTEMD_EXEC_PID = 2668
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -974,11 +964,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2102
+MANAGERPID = 2064
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3589
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5298
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -996,7 +986,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:41055
+JOURNAL_STREAM = 8:20024
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -1016,9 +1006,9 @@ SNAP_NAME = code
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
 # default
- 
 .RECIPEPREFIX := 
 # automatic
+ 
 <F = $(notdir $<)
 # environment
 SNAP_VERSION = 30d9c6cd
@@ -1053,9 +1043,13 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
+ 
 # . (device 66308, inode 2386104): 8 files, no impossibilities.
+ 
 
+ 
 # 8 files, no impossibilities in 1 directories.
+ 
 
 # Implicit Rules
 
@@ -1078,6 +1072,7 @@ ft_hexa.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-06-17 21:35:15.078506979
 #  File has been updated.
 #  Successfully updated.
@@ -1154,6 +1149,7 @@ make_lib:
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
+ 
 # automatic
 # @ := make_lib
 # automatic
@@ -1200,9 +1196,12 @@ make_lib:
 # strcache performance: lookups = 47 / hit rate = 48%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=0/47=0%
-# Finished Make data base on Sun Jun 19 16:51:32 2022
+# Finished Make data base on Tue Jun 21 19:33:40 2022
 
 # make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/push_swap/ft_printf'
+ 
+make: *** [Makefile:59: make_lib] Error 2
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -1210,7 +1209,7 @@ make_lib:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 19 16:51:32 2022
+# Make data base, printed on Tue Jun 21 19:33:40 2022
 
 # Variables
 
@@ -1233,7 +1232,7 @@ HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3b952534-6745-43a8-9ae9-1748ec598bd4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-182a8c7a-9007-4d68-b419-23c739da81d1.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -1241,7 +1240,6 @@ QT_X11_NO_MITSHM = 1
 # environment
 VSCODE_CWD = /home/dracken24
 # environment
- 
 WINDOWPATH = 2
 # default
 MAKE_COMMAND := make
@@ -1316,6 +1314,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # environment
+ 
 SNAP_REEXEC = 
 # automatic
 @F = $(notdir $@)
@@ -1324,7 +1323,7 @@ ZSH = /home/dracken24/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3853
+VSCODE_PID = 5344
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -1332,7 +1331,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2677,unix/Dracken24:/tmp/.ICE-unix/2677
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2642,unix/Dracken24:/tmp/.ICE-unix/2642
 # automatic
 *F = $(notdir $*)
 # environment
@@ -1382,7 +1381,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = f029f5c0bddb4eef9fd8430452c56e46
+INVOCATION_ID = 95f00579e85549e78f7190f4a19c8d7d
 # environment
 SNAP_REVISION = 99
 # environment
@@ -1424,7 +1423,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2702
+SYSTEMD_EXEC_PID = 2668
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -1444,11 +1443,11 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2102
+MANAGERPID = 2064
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3589
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5298
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -1458,6 +1457,7 @@ _ = /snap/code/99/usr/share/code/code
 # makefile (from 'Makefile', line 20)
 RESET = "\033[0m"
 # environment
+ 
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 32)
 CFLAGS = -Wall -Werror -Wextra
@@ -1466,7 +1466,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:41055
+JOURNAL_STREAM = 8:20024
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -1476,9 +1476,6 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # makefile (from 'Makefile', line 36)
 PRINTF_A = ft_printf/libftprintf.a
 # environment
- 
-make: *** [Makefile:59: make_lib] Error 2
-
 HOME = /home/dracken24
 # environment
 QT_IM_MODULE = ibus
@@ -1585,6 +1582,7 @@ re: fclean all
 #  File does not exist.
 #  File has not been updated.
 
+ 
 push:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -1711,6 +1709,7 @@ objs/utils.o:
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
+ 
 
 # strcache buffers: 1 (0) / strings = 35 / storage = 353 B / avg = 10 B
 # current buf: size = 8162 B / used = 353 B / count = 35 / avg = 10 B
@@ -1718,6 +1717,6 @@ objs/utils.o:
 # strcache performance: lookups = 61 / hit rate = 42%
 # hash-table stats:
 # Load=35/8192=0%, Rehash=0, Collisions=0/61=0%
-# Finished Make data base on Sun Jun 19 16:51:32 2022
+# Finished Make data base on Tue Jun 21 19:33:40 2022
 
  

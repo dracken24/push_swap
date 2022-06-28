@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/27 17:39:04 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/27 20:24:39 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 		// ft_printf("%s\n", entry[1]);
 		if (ft_strchr(entry[1], ' '))
 		{
-			all->ct.ct = split_this(nb_arg, entry, all);
+			split_this(nb_arg, entry, all);
 			ft_printf("TESTT\n");
 		}
 		else
@@ -40,7 +40,13 @@ int	ft_check_all(int nb_arg, char **entry, t_pslist *all)
 
 int	check_entry(int nb_arg, char **entry, t_pslist *all)
 {
-	// ft_printf("HEK_ENTRY\n");
+	int i = -1;
+	ft_printf("ARG2: %d\n", nb_arg);
+	while (entry[++i])
+	{
+		ft_printf("f: %s\n", entry[i]);
+	}
+	ft_printf("CHEK_ENTRY\n");
 	all->ct.i = 0;
 	while (++all->ct.i < nb_arg)
 	{
