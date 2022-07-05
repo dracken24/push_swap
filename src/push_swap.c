@@ -20,7 +20,7 @@ int	main(int nb_arg, char **entry)
 	ft_check_all(nb_arg, entry, &all);
 	if (all.ct.ct == 0)
 	{
-		write(2, "Error\n", 6);
+		write(2, "error\n", 7);
 		exit (0);
 	}
 	all.ct.ct = ft_run_prog(&all);
@@ -29,7 +29,7 @@ int	main(int nb_arg, char **entry)
 		free(all.s_a);
 		free(all.s_b);
 		free(all.save_moy);
-		write(2, "Error\n", 6);
+		write(2, "error\n", 7);
 		exit (0);
 	}
 	free(all.s_a);

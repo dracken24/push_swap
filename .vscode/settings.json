@@ -1,6 +1,7 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "random": "c"
+        "random": "c",
+        "__locale": "c"
     }
 }

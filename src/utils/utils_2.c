@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 11:40:28 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/28 14:46:41 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/05 14:57:41 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void	save_nbr_p2(t_pslist *all, char **entry, int i, int k)
 	{
 		free(all->s_a);
 		free(all->s_b);
-		free(all->save_moy);
-		write(2, "Error\n", 6);
+		free(all->tmp);
+		write(2, "error\n", 7);
 		exit(0);
 	}
 	all->s_a[k] = ft_atoi(entry[i]);
