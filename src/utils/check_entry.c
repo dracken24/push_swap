@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:46:06 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/05 15:44:03 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/05 20:13:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int	check_entry(int nb_arg, char **entry, t_pslist *all)
 				return (false);
 			if (all->ct.k > 13)
 			{
-				write(2, "error\n", 7);
+				write(2, "Error\n", 6);
 				exit(0);
 			}
 		}

@@ -30,6 +30,9 @@ typedef struct p_ct {
 	int		kk;
 	int		ct;
 	int		ct2;
+	int		l;
+	int		l2;
+	int		l3;
 	int		find1;
 	int		find2;
 }	t_ct;
