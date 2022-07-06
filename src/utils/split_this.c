@@ -6,13 +6,14 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 16:54:33 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/05 19:41:52 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/06 13:33:30 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../sources/push_swap.h"
 
-char	*ft_strjoin_2(t_pslist *all, char const *s1, char const *s2, char const *s3)
+char	*ft_strjoin_2(t_pslist *all, char const *s1,
+		char const *s2, char const *s3)
 {
 	int		ct;
 	char	*str;
