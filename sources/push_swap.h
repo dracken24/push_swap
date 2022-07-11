@@ -114,8 +114,9 @@ void	ft_ra(t_pslist *all, int ct);
 void	ft_rb(t_pslist *all, int ct);
 void	ft_rra_p2(t_pslist *all);
 void	ft_rrb_p2(t_pslist *all);
-void	ft_rr(t_pslist *all);
 void	ft_rrr(t_pslist *all);
+void	ft_rr(t_pslist *all);
+void	quit(t_pslist *all);
 
 bool	ft_pa2(t_pslist *all);
 bool	ft_pb2(t_pslist *all);

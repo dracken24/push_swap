@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 11:40:28 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/05 20:10:03 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/11 17:39:08 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,11 @@ void	ft_imp(t_pslist *all)
 	while (all->s_b[0] != all->save_moy[all->nbrs.nbr_entry - 1])
 		ft_rb(all, 1);
 	ft_pa(all);
+}
+
+void	quit(t_pslist *all)
+{
+	free(all->s_a);
+	free(all->s_b);
+	free(all->save_moy);
 }

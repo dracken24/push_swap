@@ -16,6 +16,11 @@ int	main(int nb_arg, char **entry)
 {
 	t_pslist	all;
 
+	if (nb_arg == 1)
+	{
+		write(2, "Error\n", 6);
+		exit(0);
+	}
 	ft_init_variables(&all);
 	ft_check_all(nb_arg, entry, &all);
 	if (all.ct.ct == 0)
@@ -26,15 +31,11 @@ int	main(int nb_arg, char **entry)
 	all.ct.ct = ft_run_prog(&all);
 	if (all.ct.ct == true)
 	{
-		free(all.s_a);
-		free(all.s_b);
-		free(all.save_moy);
+		quit(&all);
 		write(2, "Error\n", 6);
 		exit (0);
 	}
-	free(all.s_a);
-	free(all.s_b);
-	free(all.save_moy);
+	quit(&all);
 	return (0);
 }
 

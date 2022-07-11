@@ -6,14 +6,32 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 17:28:36 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/20 12:56:01 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/11 17:38:52 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../sources/push_swap.h"
 
+int	ft_check_order_2(t_pslist *all)
+{
+	int	i;
+
+	i = -1;
+	while (++i < all->nbrs.nbr_in_a)
+	{
+		if (all->s_a[i] != all->save_moy[i])
+			return (false);
+	}
+	return (true);
+}
+
 void	ft_less_five(t_pslist *all)
 {
+	if (ft_check_order_2(all))
+	{
+		quit(all);
+		exit(0);
+	}
 	if (all->nbrs.nbr_entry <= 3)
 		less_tree(all);
 	else
